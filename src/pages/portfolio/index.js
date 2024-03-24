@@ -8,15 +8,15 @@ import WorkSection from '@/components/Worksection';
 
 const Home = () => {
   return (
-    // <RootLayout>
-    <div className=" w-full bg-primary p-0 text-white ">
-      <HeroSection />
-      <PartnersSection />
-      {/* <WorkSection /> */}
-      {/* <AboutMeSection /> */}
-      {/* <GetInTouchForm /> */}
-    </div>
-    // </RootLayout>
+    <RootLayout>
+      <div className="container mx-auto bg-primary py-8 text-white ">
+        {/* <HeroSection /> */}
+        {/* <PartnersSection /> */}
+        {/* <WorkSection /> */}
+        {/* <AboutMeSection /> */}
+        {/* <GetInTouchForm /> */}
+      </div>
+    </RootLayout>
   );
 };
 

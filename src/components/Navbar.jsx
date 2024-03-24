@@ -30,8 +30,8 @@ const Navbar = () => {
       </div>
       {/* Links on the right */}
       <div className="flex items-center tracking-widest space-x-16">
-        <Link href="/work">WORK</Link>
-        <Link href="/#about">ABOUT ME</Link>
+        <Link href="/work">SERVICES</Link>
+        {/* <Link href="/#about">ABOUT ME</Link> */}
         <Link href="/contact">CONTACT</Link>
       </div>
     </nav>

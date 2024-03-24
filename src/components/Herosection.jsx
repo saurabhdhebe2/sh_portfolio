@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const HeroSection = () => {
   return (
-    <div className="relative">
+    <div className="relative p-0 m-0">
       {/* Image with Next.js Image Component */}
       <Image
         src="/assets/images/hero-image.jpeg" // Path to your image file
@@ -21,12 +21,12 @@ const HeroSection = () => {
           A world-renowned filmmaker that inspired a generation of content
           creators from all around the world.
         </p>
-        <div className="flex space-x-4 ">
-          <button className="bg-secondary  text-white px-4 py-4 rounded-md">
+        <div className="flex space-x-4 mt-20">
+          <button className="bg-primary-transparent  text-white px-4 py-4 border-secondary border-2 rounded-md">
             <Link href="/contact">Get in touch</Link>
           </button>
-          <button className="bg-button text-white px-4 py-4 rounded-md">
-            <Link href="#partner"> Know More</Link>
+          <button className="bg-primary-transparent  text-white px-4 py-4 border-button border-2 rounded-md">
+            <Link href="/work"> PORTFOLIO</Link>
           </button>
         </div>
       </div>
