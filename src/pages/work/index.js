@@ -17,7 +17,7 @@ const Work = () => {
           <Link href="/" className="text-white font-semibold text-lg md:mr-4">
             HOME
           </Link>
-          <div className="sm:mt-4 w-12 mt-3 ml-4 lg:w-full  lg:w-12 md:my-4 my-0  h-px mr-4 opacity-40 bg-white "></div>
+          <div className="sm:mt-4 w-12 mt-3 ml-4  md:my-4  my-0 lg:w-12 h-px mr-4 opacity-40 bg-white "></div>
           <h2 className="text-cyan-300 font-semibold text-lg">WORK</h2>
         </div>
 
