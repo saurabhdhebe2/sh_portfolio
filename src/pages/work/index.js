@@ -1,5 +1,5 @@
-import RootLayout from '@/components/Layout';
-import VideoPage from '@/components/VideoPage';
+import RootLayout from '../../components/Layout';
+import VideoPage from '../../components/VideoPage';
 import Link from 'next/link';
 import { useState } from 'react';
 
