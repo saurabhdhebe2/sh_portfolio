@@ -3,36 +3,35 @@ import RootLayout from '../../components/Layout';
 import VideoPage from '../../components/VideoPage';
 import Link from 'next/link';
 import { useState } from 'react';
+import useIsMobile from '../../components/isMobile';
 
 const Work = () => {
-  const [selectedCategory, setSelectedCategory] = useState('tv');
+  const [selectedCategory, setSelectedCategory] = useState('tv_shows');
+  const isMobile = useIsMobile();
 
   const handleCategoryClick = (category) => {
     setSelectedCategory(category);
   };
 
   return (
-    <RootLayout isNav={false}>
+    <RootLayout isNav={!isMobile}>
       <div className="min-h-screen sm:pt-34 md:pt-52 mx-4 mx-20 lg:py-8">
-        <div className="flex justify-around">
-          <div className="flex sm:pt-36 md:flex-row  items-start lg:items-center">
-            <Link
-              href="/"
-              className="text-white pt-8 font-semibold text-lg md:mr-4"
-            >
-              HOME
-            </Link>
-            <div className="sm:mt-4 mt-[3rem] w-12 mt-3 ml-4 md:my-4 my-0 lg:w-12 h-px mr-4 opacity-40 bg-white "></div>
-            <h2 className="text-cyan-300 pt-8 font-semibold text-lg">WORK</h2>
-          </div>
-          <div>
-            <Image
-              src="/assets/images/shubham_logo.png"
-              width={120}
-              height={20}
-              alt="shubham_logo"
-            />
-          </div>
+        <div className="flex sm:pt-36 md:flex-row  items-start lg:items-center">
+          <Link href="/" className="text-white font-semibold text-lg md:mr-4">
+            HOME
+          </Link>
+          <div className="sm:mt-4 mt-[3rem] w-12 mt-3 ml-4 md:my-4 my-0 lg:w-12 h-px mr-4 opacity-40 bg-white "></div>
+          <h2 className="text-cyan-300 font-semibold text-lg">WORK</h2>
+          {isMobile && (
+            <div className="ml-16">
+              <Image
+                src="/assets/images/shubham_logo.png"
+                width={120}
+                height={20}
+                alt="shubham_logo"
+              />
+            </div>
+          )}
         </div>
 
         <h2 className="text-2xl md:text-4xl font-bold mb-4 mt-8 md:mt-20">
@@ -45,14 +44,14 @@ const Work = () => {
 
         <div className="flex flex-wrap justify-center mt-8 space-x-8 ">
           {[
-            'tv shows',
-            'music films',
+            'tv_shows',
+            'music_films',
             'reels',
             'ads',
             'weddings',
             'travel',
-            'personal projects',
-            'after movies',
+            'personal_projects',
+            'after_movies',
           ].map((category, index) => (
             <h2
               key={index}
@@ -63,7 +62,7 @@ const Work = () => {
                   : 'text-gray-100'
               } hover:text-cyan-800 active:text-cyan-300`}
             >
-              {category.toUpperCase()}
+              {category.toUpperCase().replace('_', ' ')}
             </h2>
           ))}
         </div>

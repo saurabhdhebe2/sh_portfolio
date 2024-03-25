@@ -20,11 +20,11 @@ const Footer = () => {
         </Link>
       </div>
       {/* Centered Logo */}
-      <div className="text-center md:text-left mb-2 md:mb-0">
+      {/* <div className="text-center md:text-left mb-2 md:mb-0">
         <Link href="/" className="text-white font-semibold text-lg">
           SHUBHAM DHEBE
         </Link>
-      </div>
+      </div> */}
       {/* Contact Link on the right */}
       <div className="text-center md:text-right mt-2 md:mt-0">
         <Link
