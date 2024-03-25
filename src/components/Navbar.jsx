@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState, useEffect } from 'react';
 
 const Navbar = () => {
@@ -16,7 +17,7 @@ const Navbar = () => {
     };
   }, []);
 
-  const navbarPadding = scrollY > 0 ? 'py-4' : 'py-10';
+  const navbarPadding = scrollY > 0 ? 'py-0' : 'py-0';
 
   return (
     <nav
@@ -24,10 +25,16 @@ const Navbar = () => {
     >
       <div className="flex items-center">
         <Link
-          className="text-white text-2xl md:text-3xl font-semibold"
+          className="text-white  text-2xl md:text-3xl font-semibold"
           href="/"
         >
-          SHUBHAM
+          {/* SHUBHAM */}
+          <Image
+            src="/assets/images/shubham_logo.png"
+            width={120}
+            height={20}
+            alt="shubham_logo"
+          />
         </Link>
       </div>
       <div className="md:hidden flex items-center">

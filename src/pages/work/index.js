@@ -11,9 +11,9 @@ const Work = () => {
   };
 
   return (
-    <RootLayout className="bg-gray-100">
+    <RootLayout className="bg-gray-100 h-screen">
       <div className="py-8 md:py-36 mx-4 md:mx-20">
-        <div className="flex md:flex-row pt-24 items-start lg:items-center">
+        <div className="flex md:flex-row  items-start lg:items-center">
           <Link href="/" className="text-white font-semibold text-lg md:mr-4">
             HOME
           </Link>
@@ -29,22 +29,29 @@ const Work = () => {
           compilations, creative storytelling, travel vlogs & client work.
         </p>
 
-        <div className="flex flex-wrap justify-center mt-8">
-          {['tv', 'films', 'reels', 'advertisements', 'promos', 'travel'].map(
-            (category, index) => (
-              <h2
-                key={index}
-                onClick={() => handleCategoryClick(category)}
-                className={`mr-4 mb-4 text-base md:text-lg font-medium ${
-                  selectedCategory === category
-                    ? 'text-cyan-300'
-                    : 'text-gray-100'
-                } hover:text-cyan-800 active:text-cyan-300`}
-              >
-                {category.toUpperCase()}
-              </h2>
-            )
-          )}
+        <div className="flex flex-wrap justify-center mt-8 space-x-8">
+          {[
+            'tv shows',
+            'music films',
+            'reels',
+            'ads',
+            'weddings',
+            'travel',
+            'personal projects',
+            'after movies',
+          ].map((category, index) => (
+            <h2
+              key={index}
+              onClick={() => handleCategoryClick(category)}
+              className={`mr-4 mb-4 text-base md:text-lg font-medium tracking-widest ${
+                selectedCategory === category
+                  ? 'text-cyan-300'
+                  : 'text-gray-100'
+              } hover:text-cyan-800 active:text-cyan-300`}
+            >
+              {category.toUpperCase()}
+            </h2>
+          ))}
         </div>
 
         <div className="mt-8">
