@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import RootLayout from '../../components/Layout';
 import VideoPage from '../../components/VideoPage';
 import Link from 'next/link';
@@ -11,14 +12,27 @@ const Work = () => {
   };
 
   return (
-    <RootLayout className="bg-gray-100 h-screen">
-      <div className="py-8 md:py-36 mx-4 md:mx-20">
-        <div className="flex md:flex-row  items-start lg:items-center sm:mt-24">
-          <Link href="/" className="text-white font-semibold text-lg md:mr-4">
-            HOME
-          </Link>
-          <div className="sm:mt-4 w-12 mt-3 ml-4  md:my-4  my-0 lg:w-12 h-px mr-4 opacity-40 bg-white "></div>
-          <h2 className="text-cyan-300 font-semibold text-lg">WORK</h2>
+    <RootLayout isNav={false}>
+      <div className="min-h-screen sm:pt-34 md:pt-52 mx-4 mx-20 lg:py-8">
+        <div className="flex justify-around">
+          <div className="flex sm:pt-36 md:flex-row  items-start lg:items-center">
+            <Link
+              href="/"
+              className="text-white pt-8 font-semibold text-lg md:mr-4"
+            >
+              HOME
+            </Link>
+            <div className="sm:mt-4 mt-[3rem] w-12 mt-3 ml-4 md:my-4 my-0 lg:w-12 h-px mr-4 opacity-40 bg-white "></div>
+            <h2 className="text-cyan-300 pt-8 font-semibold text-lg">WORK</h2>
+          </div>
+          <div>
+            <Image
+              src="/assets/images/shubham_logo.png"
+              width={120}
+              height={20}
+              alt="shubham_logo"
+            />
+          </div>
         </div>
 
         <h2 className="text-2xl md:text-4xl font-bold mb-4 mt-8 md:mt-20">
