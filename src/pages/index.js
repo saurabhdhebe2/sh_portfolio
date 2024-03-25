@@ -1,10 +1,6 @@
 // pages/index.js
-import AboutMeSection from '@/components/Aboutme';
-import GetInTouchForm from '@/components/Contact';
-import HeroSection from '@/components/HeroSection';
-import RootLayout from '@/components/Layout';
-import PartnersSection from '@/components/Partnersection';
-import WorkSection from '@/components/Worksection';
+import HeroSection from '../components/HeroSection';
+import PartnersSection from '../components/Partnersection';
 
 const Home = () => {
   return (
