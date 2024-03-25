@@ -27,7 +27,7 @@ const HeroSection = () => {
         Your browser does not support the video tag.
       </video>
       {/* Content overlay */}
-      <div className="absolute sm:pt-20 py-[500px] md:pt-20 py-[500px] top-0 left-0 w-full h-full flex flex-col justify-center items-center text-white p-4 md:p-8 bg-black bg-opacity-90 0">
+      <div className="absolute sm:pt-20 py-[500px] md:pt-20 py-[500px]  lg:top-0 left-0 w-full h-full lg:py-[485px] flex flex-col justify-center items-center text-white p-4 md:p-8 bg-black bg-opacity-90 0">
         <h1 className="text-2xl md:text-4xl text-center font-bold mb-4 md:mb-6">
           Shubham Dhebe
         </h1>
