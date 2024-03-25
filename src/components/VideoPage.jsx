@@ -137,7 +137,7 @@ const VideoPage = ({ category }) => {
   };
 
   return (
-    <div className="grid grid-cols-3 gap-4 mx-auto py-8">
+    <div className="grid sm:grid-col-1 gap-2 md:grid-col-2 gap-2 lg:grid-cols-3 gap-4 mx-auto py-8">
       {videos[category].map((video, index) => (
         <div key={index}>{video && <VideoDetail video={video} />}</div>
       ))}

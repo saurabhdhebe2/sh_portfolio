@@ -20,18 +20,38 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`px-60 navbar fixed top-0 left-0 w-full bg-primary-transparent px-20 flex items-center justify-between z-10 ${navbarPadding}`}
+      className={`px-6 md:px-20 navbar fixed top-0 left-0 w-full bg-primary-transparent flex items-center justify-between z-10 ${navbarPadding}`}
     >
-      <div>
-        <Link href="/" className="text-white text-3xl font-semibold ">
+      <div className="flex items-center">
+        <Link
+          className="text-white text-2xl md:text-3xl font-semibold"
+          href="/"
+        >
           SHUBHAM
-          {/* <span className="font-extrabold  text-3xl text-blue-700">DHEBE</span> */}
         </Link>
       </div>
+      <div className="md:hidden flex items-center">
+        {/* Mobile menu icon */}
+        <button className="text-white focus:outline-none">
+          <svg
+            className="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </button>
+      </div>
       {/* Links on the right */}
-      <div className="flex items-center tracking-widest space-x-16">
+      <div className="hidden md:flex items-center tracking-widest space-x-8">
         <Link href="/work">SERVICES</Link>
-        {/* <Link href="/#about">ABOUT ME</Link> */}
         <Link href="/contact">CONTACT</Link>
       </div>
     </nav>

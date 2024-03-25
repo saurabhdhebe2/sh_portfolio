@@ -11,78 +11,43 @@ const Work = () => {
   };
 
   return (
-    <RootLayout className="bg-gray-100 ">
-      <div className="py-36 mx-20">
-        <div className="flex">
-          <Link href="/" className="text-white font-semibold text-lg">
+    <RootLayout className="bg-gray-100">
+      <div className="py-8 md:py-36 mx-4 md:mx-20">
+        <div className="flex md:flex-row pt-24 items-start lg:items-center">
+          <Link href="/" className="text-white font-semibold text-lg md:mr-4">
             HOME
           </Link>
-          <div className="w-12 mx-4 mt-4 h-px opacity-40 bg-white"></div>
+          <div className="sm:mt-4 w-12 mt-3 ml-4 lg:w-full  lg:w-12 md:my-4 my-0  h-px mr-4 opacity-40 bg-white "></div>
           <h2 className="text-cyan-300 font-semibold text-lg">WORK</h2>
         </div>
 
-        <h2 className="text-4xl font-bold mb-4 mt-20">
+        <h2 className="text-2xl md:text-4xl font-bold mb-4 mt-8 md:mt-20">
           Projects by Shubham dhebe
         </h2>
-        <p>
+        <p className="text-sm md:text-base">
           A collection of some of Shubham&apos;s best work including drone reel
           compilations, creative storytelling, travel vlogs & client work.
         </p>
 
-        <div className="flex justify-center mt-12">
-          <h2
-            onClick={() => handleCategoryClick('tv')}
-            className={`mr-8 text-lg font-medium ${
-              selectedCategory === 'tv' ? 'text-cyan-300' : 'text-gray-100'
-            } hover:text-cyan-800 active:text-cyan-300 tracking-widest`}
-          >
-            TV SHOWS
-          </h2>
-          <h2
-            onClick={() => handleCategoryClick('films')}
-            className={`mr-8 text-lg font-medium ${
-              selectedCategory === 'films' ? 'text-cyan-300' : 'text-gray-100'
-            } hover:text-cyan-800 active:text-cyan-300 tracking-widest`}
-          >
-            FILMS
-          </h2>
-          <h2
-            onClick={() => handleCategoryClick('reels')}
-            className={`mr-8 text-lg font-medium ${
-              selectedCategory === 'reels' ? 'text-cyan-300' : 'text-gray-100'
-            } hover:text-cyan-800 active:text-cyan-300 tracking-widest`}
-          >
-            REELS
-          </h2>
-          <h2
-            onClick={() => handleCategoryClick('advertisements')}
-            className={`mr-8 text-lg font-medium ${
-              selectedCategory === 'advertisements'
-                ? 'text-cyan-300'
-                : 'text-gray-100'
-            } hover:text-cyan-800 active:text-cyan-300 tracking-widest`}
-          >
-            ADVERTISEMENTS
-          </h2>
-          <h2
-            onClick={() => handleCategoryClick('promos')}
-            className={`mr-8 text-lg font-medium ${
-              selectedCategory === 'promos' ? 'text-cyan-300' : 'text-gray-100'
-            } hover:text-cyan-800 active:text-cyan-300 tracking-widest`}
-          >
-            PROMOS
-          </h2>
-          <h2
-            onClick={() => handleCategoryClick('travel')}
-            className={`mr-8 text-lg font-medium ${
-              selectedCategory === 'travel' ? 'text-cyan-300' : 'text-gray-100'
-            } hover:text-cyan-800 active:text-cyan-300 tracking-widest`}
-          >
-            TRAVEL
-          </h2>
+        <div className="flex flex-wrap justify-center mt-8">
+          {['tv', 'films', 'reels', 'advertisements', 'promos', 'travel'].map(
+            (category, index) => (
+              <h2
+                key={index}
+                onClick={() => handleCategoryClick(category)}
+                className={`mr-4 mb-4 text-base md:text-lg font-medium ${
+                  selectedCategory === category
+                    ? 'text-cyan-300'
+                    : 'text-gray-100'
+                } hover:text-cyan-800 active:text-cyan-300`}
+              >
+                {category.toUpperCase()}
+              </h2>
+            )
+          )}
         </div>
 
-        <div className="mt-12">
+        <div className="mt-8">
           <VideoPage category={selectedCategory} />
         </div>
       </div>

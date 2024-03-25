@@ -65,23 +65,15 @@ const GetInTouchForm = () => {
   }, [flashMessage]);
 
   return (
-    <div
-      id="contact"
-      className="bg-[#372F33] p-20 mx-32"
-      // style={{
-      //   backgroundImage: `url(/assets/images/contact-image.avif)`,
-      //   backgroundSize: 'cover',
-      //   backgroundPosition: 'center',
-      // }}
-    >
+    <div id="contact" className="bg-[#372F33] p-6 md:p-20 mx-4 md:mx-32">
       {flashMessage && (
         <FlashMessage message={flashMessage.message} type={flashMessage.type} />
       )}
-      <h2 className="text-4xl font-bold mb-4">Get In Touch</h2>
-      <div className="w-1/2">
-        <form onSubmit={handleSubmit}>
-          <div className="flex mb-4">
-            <div className="mr-4 flex-grow">
+      <h2 className="text-2xl md:text-4xl font-bold mb-4">Get In Touch</h2>
+      <div className="w-full md:w-1/2">
+        <form onSubmit={handleSubmit} className="space-y-4">
+          <div className="flex flex-col md:flex-row md:space-x-4">
+            <div className="flex-grow">
               <label
                 htmlFor="name"
                 className="block text-gray-200 mb-2 font-semibold"
@@ -135,7 +127,7 @@ const GetInTouchForm = () => {
           </div>
           <button
             type="submit"
-            className="bg-primary text-white py-2 px-4 rounded-md hover:bg-primary-dark"
+            className="bg-primary text-white py-2 px-4 rounded-md hover:bg-primary-dark w-full"
           >
             Submit
           </button>

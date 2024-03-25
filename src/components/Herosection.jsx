@@ -1,4 +1,3 @@
-// components/HeroSection.js
 import Image from 'next/image';
 import Link from 'next/link';
 import {
@@ -15,9 +14,9 @@ const HeroSection = () => {
       {/* Image with Next.js Image Component */}
 
       <video
-        className="opacity-100"
-        width="1920"
-        height="1080"
+        className="sm:w-[400px] h-[100%] md:w-[900px] h-[100%] lg:w-[1920px] h-[980px]"
+        // width="1920"
+        // height="1080"
         autoPlay
         muted
         loop
@@ -27,31 +26,31 @@ const HeroSection = () => {
         Your browser does not support the video tag.
       </video>
       {/* Content overlay */}
-      <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center text-white p-8 bg-black bg-opacity-90">
-        <h1 className="text-4xl md:text-6xl text-center font-bold mb-6">
+      <div className="absolute sm:pt-20 md:pt-20 top-0 left-0 w-full h-full flex flex-col justify-center items-center text-white p-4 md:p-8 bg-black bg-opacity-90 0">
+        <h1 className="text-2xl md:text-4xl text-center font-bold mb-4 md:mb-6">
           Shubham Dhebe
         </h1>
-        <p className="text-lg md:text-xl text-center mb-8">
+        <p className="text-sm md:text-lg text-center mb-4 md:mb-8">
           A world-renowned filmmaker that inspired a generation of content
           creators from all around the world.
         </p>
-        <div className="flex space-x-4 mt-20">
-          <button className="bg-primary-transparent  text-white px-4 py-4 border-secondary border-2 rounded-md">
+        <div className="flex flex-col space-y-4 md:space-x-4 md:flex-row md:space-y-0 md:mt-8">
+          <button className="bg-primary-transparent text-white px-4 py-2 md:py-4 border-secondary border-2 rounded-md">
             <Link href="/contact">Get in touch</Link>
           </button>
-          <button className="bg-primary-transparent  text-white px-4 py-4 border-button border-2 rounded-md">
-            <Link href="/work"> PORTFOLIO</Link>
+          <button className="bg-primary-transparent text-white px-4 py-2 md:py-4 border-button border-2 rounded-md">
+            <Link href="/work">PORTFOLIO</Link>
           </button>
         </div>
 
-        <div className="flex space-x-4 mt-36">
+        <div className="flex space-x-4 mt-8">
           {/* Instagram */}
           <Link
             href="https://www.instagram.com/your-instagram"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaInstagram className="text-gray-300 border-secondary text-4xl hover:text-gray-400" />
+            <FaInstagram className="text-gray-300 border-secondary text-3xl md:text-4xl hover:text-gray-400" />
           </Link>
           {/* LinkedIn */}
           <Link
@@ -59,7 +58,7 @@ const HeroSection = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaLinkedin className="text-gray-300 text-4xl  hover:text-gray-400" />
+            <FaLinkedin className="text-gray-300 text-3xl md:text-4xl hover:text-gray-400" />
           </Link>
           {/* YouTube */}
           <Link
@@ -67,7 +66,7 @@ const HeroSection = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaYoutube className="text-gray-300 text-4xl  hover:text-gray-400" />
+            <FaYoutube className="text-gray-300 text-3xl md:text-4xl hover:text-gray-400" />
           </Link>
           {/* Vimeo */}
           <Link
@@ -75,7 +74,7 @@ const HeroSection = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaVimeo className="text-gray-300 text-4xl  hover:text-gray-400" />
+            <FaVimeo className="text-gray-300 text-3xl md:text-4xl hover:text-gray-400" />
           </Link>
           {/* Gmail */}
           <Link
@@ -83,12 +82,10 @@ const HeroSection = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaEnvelope className="text-gray-300 text-4xl  hover:text-gray-400" />
+            <FaEnvelope className="text-gray-300 text-3xl md:text-4xl hover:text-gray-400" />
           </Link>
         </div>
-        <div className="flex space-x-4 mt-6">
-          {/* Add more icons and links as needed */}
-        </div>
+        {/* Additional icons and links can be added here */}
       </div>
     </div>
   );
