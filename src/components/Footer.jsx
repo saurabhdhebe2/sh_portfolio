@@ -13,7 +13,7 @@ const Footer = () => {
         </Link>
         <div className="w-full md:w-12 md:mx-4 mt-4 md:h-px opacity-40 bg-white"></div>
         <Link
-          href="https://www.instagram.com/shubham.dhebe?igsh=MWRjbjN4a3c1YzV0Yg=="
+          href="https://www.instagram.com/shubham.dhebe"
           className="text-white font-semibold text-lg md:ml-4"
         >
           INSTAGRAM

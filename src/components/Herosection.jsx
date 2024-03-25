@@ -47,7 +47,7 @@ const HeroSection = () => {
         <div className="flex space-x-4 mt-8">
           {/* Instagram */}
           <Link
-            href="https://www.instagram.com/your-instagram"
+            href="https://www.instagram.com/shubham.dhebe"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -55,7 +55,7 @@ const HeroSection = () => {
           </Link>
           {/* LinkedIn */}
           <Link
-            href="https://www.linkedin.com/in/your-linkedin"
+            href="https://www.linkedin.com/in/shubhamdhebe?"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -63,7 +63,7 @@ const HeroSection = () => {
           </Link>
           {/* YouTube */}
           <Link
-            href="https://www.youtube.com/your-youtube"
+            href="https://www.youtube.com/@ShubhamDhebe"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -71,7 +71,7 @@ const HeroSection = () => {
           </Link>
           {/* Vimeo */}
           <Link
-            href="https://vimeo.com/your-vimeo"
+            href="https://vimeo.com/shubhamdhebe"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -79,7 +79,7 @@ const HeroSection = () => {
           </Link>
           {/* Gmail */}
           <Link
-            href="mailto:your.email@gmail.com"
+            href="sd123@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
           >
