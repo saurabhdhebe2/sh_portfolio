@@ -20,8 +20,8 @@ const GetInTouchForm = () => {
     e.preventDefault();
     try {
       const response = await emailjs.send(
-        'service_kehoo69', // Service ID
-        'template_n0wn01w', // Template ID
+        process.env.SERVICE_ID, // Service ID
+        process.env.TEMPLATE_ID, // Template ID
         {
           to_name: 'Shubham',
           from_name: formData.name,
@@ -29,10 +29,10 @@ const GetInTouchForm = () => {
           message: formData.message,
         },
         {
-          publicKey: '_PiVoUCRYoGlv6Z7u',
+          publicKey: process.env.PUBLIC_KEY,
         }
       );
-
+      console.log(process.env.PUBLIC_KEY, '---');
       if (response.status === 200) {
         setFormData({ name: '', email: '', message: '' });
         setFlashMessage({

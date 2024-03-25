@@ -11,7 +11,7 @@ const Footer = () => {
         >
           YOUTUBE
         </Link>
-        <div className="w-full md:w-12 md:mx-4 mt-4 md:h-px opacity-40 bg-white"></div>
+        <div className="w-full md:w-12 md:mx-4 mt-4  md:h-px lg:mt-0 opacity-40 bg-white"></div>
         <Link
           href="https://www.instagram.com/shubham.dhebe"
           className="text-white font-semibold text-lg md:ml-4"

@@ -13,7 +13,7 @@ const Work = () => {
   return (
     <RootLayout className="bg-gray-100 h-screen">
       <div className="py-8 md:py-36 mx-4 md:mx-20">
-        <div className="flex md:flex-row  items-start lg:items-center">
+        <div className="flex md:flex-row  items-start lg:items-center sm:mt-24">
           <Link href="/" className="text-white font-semibold text-lg md:mr-4">
             HOME
           </Link>
@@ -25,11 +25,11 @@ const Work = () => {
           Projects by Shubham dhebe
         </h2>
         <p className="text-sm md:text-base">
-          A collection of some of Shubham&apos;s best work including drone reel
-          compilations, creative storytelling, travel vlogs & client work.
+          A collection of some of Shubham&apos;s best work including music
+          films, creative storytelling, travel films & client work.
         </p>
 
-        <div className="flex flex-wrap justify-center mt-8 space-x-8">
+        <div className="flex flex-wrap justify-center mt-8 space-x-8 ">
           {[
             'tv shows',
             'music films',
@@ -43,7 +43,7 @@ const Work = () => {
             <h2
               key={index}
               onClick={() => handleCategoryClick(category)}
-              className={`mr-4 mb-4 text-base md:text-lg font-medium tracking-widest ${
+              className={`mr-4 mb-4 text-base md:text-lg font-medium tracking-widest space-y-4 ${
                 selectedCategory === category
                   ? 'text-cyan-300'
                   : 'text-gray-100'
