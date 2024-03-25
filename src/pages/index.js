@@ -5,9 +5,9 @@ import PartnersSection from '../components/Partnersection';
 const Home = () => {
   return (
     // <RootLayout>
-    <div className=" w-full bg-primary p-0 text-white ">
+    <div className=" w-full h-full bg-primary p-0 text-white">
       <HeroSection />
-      <PartnersSection />
+      {/* <PartnersSection /> */}
       {/* <WorkSection /> */}
       {/* <AboutMeSection /> */}
       {/* <GetInTouchForm /> */}

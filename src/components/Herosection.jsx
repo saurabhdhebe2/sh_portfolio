@@ -15,19 +15,19 @@ const HeroSection = () => {
 
       <video
         // className=""
-        className="sm:w-auto h-[100%] md:w-auto h-[100%] lg:w-[1920px] h-[980px] absolute inset-0  object-cover"
+        className="w-[100%] h-screen absolute inset-0 object-cover"
         // width="1920"
         // height="1080"
         autoPlay
         muted
         loop
-        preload="none"
       >
         <source src="/assets/videos/hero-video.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       {/* Content overlay */}
-      <div className="absolute sm:pt-20 py-[500px] md:pt-20 py-[500px]  lg:top-0 left-0 w-full h-full lg:py-[485px] flex flex-col justify-center items-center text-white p-4 md:p-8 bg-black bg-opacity-90 0">
+      <div className="w-auto h-screen absolute inset-0 object-cover  flex flex-col justify-center items-center text-white p-4 md:p-8 bg-black bg-opacity-90 0">
+        {/* <div className="absolute sm:pt-20 py-[500px] md:pt-20 py-[500px]  lg:top-0 left-0 w-full h-full lg:py-[485px] px-32 flex flex-col justify-center items-center text-white p-4 md:p-8 bg-black bg-opacity-90 0"> */}
         <h1 className="text-2xl md:text-4xl text-center font-bold mb-4 md:mb-6">
           Shubham Dhebe
         </h1>
