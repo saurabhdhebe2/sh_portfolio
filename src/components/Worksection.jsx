@@ -1,6 +1,6 @@
 // components/WorkSection.js
 import { useState } from 'react';
-import ImageOverlay from './ImageOverlay';
+import ImageOverlay from './Imageoverlay';
 
 const WorkSection = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);

@@ -1,5 +1,5 @@
 // pages/index.js
-import HeroSection from '../components/HeroSection';
+import HeroSection from '../components/Herosection';
 import PartnersSection from '../components/Partnersection';
 
 const Home = () => {
