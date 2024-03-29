@@ -1,21 +1,14 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import {
-  FaInstagram,
-  FaLinkedin,
-  FaYoutube,
-  FaVimeo,
-  FaEnvelope,
-} from 'react-icons/fa';
+import { FaInstagram, FaLinkedin, FaYoutube, FaEnvelope } from 'react-icons/fa';
 import useIsMobile from '../components/isMobile';
 
 const HeroSection = () => {
   const isMobile = useIsMobile();
 
   return (
-    <div className="relative p-0 m-0">
+    <div className="relative p-0 m-0 min-h-screen">
       {/* Image with Next.js Image Component */}
-
       {isMobile ? (
         <Image
           src="/assets/images/home_background.jpg"
@@ -40,67 +33,73 @@ const HeroSection = () => {
         </video>
       )}
       {/* Content overlay */}
-      <div className="bg-opacity-90 0 w-auto min-h-screen absolute inset-0 object-cover  flex flex-col justify-center items-center text-white p-4 md:p-8 md:bg-black md:bg-opacity-90 0">
+      <div className="bg-black bg-opacity-60 w-auto  absolute inset-0 object-cover  flex flex-col justify-center items-center text-white p-4 md:p-8 md:bg-black md:bg-opacity-90">
         {/* <div className="absolute sm:pt-20 py-[500px] md:pt-20 py-[500px]  lg:top-0 left-0 w-full h-full lg:py-[485px] px-32 flex flex-col justify-center items-center text-white p-4 md:p-8 bg-black bg-opacity-90 0"> */}
-        <h1 className="text-2xl md:text-4xl text-center font-bold mb-4 md:mb-6">
-          Shubham Dhebe
-        </h1>
-        <p className="text-sm md:text-lg text-center mb-4 md:mb-8">
-          A world-renowned filmmaker that inspired a generation of content
-          creators from all around the world.
+        <p className="font-bebas-neue text-md text-center font-extralight tracking-widest">
+          FILMMAKER | PHOTOGRAOHER
         </p>
-        <div className="flex flex-col space-y-4 md:space-x-4 md:flex-row md:space-y-0 md:mt-8">
-          <button className="bg-primary-transparent text-white px-4 py-2 md:py-4 border-secondary border-2 rounded-md">
-            <Link href="/contact">Get in touch</Link>
+        <h4 className="font-bebas-neue text-5xl lg:text-5xl  text-center font-thin text-custom-gray ">
+          Shubham Dhebe
+        </h4>
+        <p className="font-bebas-neue sm:text-sm md:text-xl text-center font-extralight tracking-widest mb-4 md:mb-6">
+          @shubham.dhebe
+        </p>
+        <div className="flex flex-row space-x-4 mt-4 md:space-x-4 md:flex-row md:space-y-0 md:my-8">
+          <button className="bg-primary-transparent text-white px-4 py-2 md:py-4 border-button border-2 rounded-md hover:text-gray-300">
+            <Link
+              className="font-bebas-neue text-2xl font-thin tracking-wide"
+              href="/contact"
+            >
+              Get in touch
+            </Link>
           </button>
-          <button className="bg-primary-transparent text-white px-4 py-2 md:py-4 border-button border-2 rounded-md">
-            <Link href="/work">PORTFOLIO</Link>
+          <button className="bg-primary-transparent text-white px-4 py-2 md:py-4 border-secondary border-2 rounded-md hover:text-gray-300">
+            <Link
+              className="font-bebas-neue text-2xl font-thin tracking-wide"
+              href="/work"
+            >
+              PORTFOLIO
+            </Link>
           </button>
         </div>
-
-        <div className="flex space-x-4 mt-8">
-          {/* Instagram */}
-          <Link
-            href="https://www.instagram.com/shubham.dhebe"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaInstagram className="text-gray-300 border-secondary text-3xl md:text-4xl hover:text-gray-400" />
-          </Link>
-          {/* LinkedIn */}
-          <Link
-            href="https://www.linkedin.com/in/shubhamdhebe?"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaLinkedin className="text-gray-300 text-3xl md:text-4xl hover:text-gray-400" />
-          </Link>
-          {/* YouTube */}
-          <Link
-            href="https://www.youtube.com/@ShubhamDhebe"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaYoutube className="text-gray-300 text-3xl md:text-4xl hover:text-gray-400" />
-          </Link>
-          {/* Vimeo */}
-          <Link
-            href="https://vimeo.com/shubhamdhebe"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaVimeo className="text-gray-300 text-3xl md:text-4xl hover:text-gray-400" />
-          </Link>
-          {/* Gmail */}
-          <Link
-            href="sd123@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaEnvelope className="text-gray-300 text-3xl md:text-4xl hover:text-gray-400" />
-          </Link>
-        </div>
-        {/* Additional icons and links can be added here */}
+      </div>
+      {/* Social buttons */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-4 ">
+        {/* Instagram */}
+        <Link
+          href="https://www.instagram.com/shubham.dhebe"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaInstagram className="text-white font-bebas-neue font-extrabold border-button border rounded-lg p-2 text-4xl md:text-4xl hover:text-black  hover:bg-white transition duration-300 " />
+        </Link>
+        {/* LinkedIn */}
+        <Link
+          href="https://www.linkedin.com/in/shubhamdhebe?"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:bg-customized-gray hover:text-black hover:bg-opacity-20 transition duration-300"
+        >
+          <FaLinkedin className="text-white font-bebas-neue font-extrabold border-button border rounded-lg p-2 text-4xl md:text-4xl hover:text-black  hover:bg-white transition duration-300 " />
+        </Link>
+        {/* YouTube */}
+        <Link
+          href="https://www.youtube.com/@ShubhamDhebe"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:bg-customized-gray hover:text-black hover:bg-opacity-20 transition duration-300"
+        >
+          <FaYoutube className="text-white font-bebas-neue font-extrabold border-button border rounded-lg p-2 text-4xl md:text-4xl hover:text-black  hover:bg-white transition duration-300 " />
+        </Link>
+        {/* Gmail */}
+        <Link
+          href="mailto:sd123@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:bg-customized-gray hover:text-black hover:bg-opacity-20 transition duration-300"
+        >
+          <FaEnvelope className="text-white font-bebas-neue font-extrabold border-button border rounded-lg p-2 text-4xl md:text-4xl hover:text-black  hover:bg-white transition duration-300 " />
+        </Link>
       </div>
     </div>
   );

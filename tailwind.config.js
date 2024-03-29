@@ -7,8 +7,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      textColor: {
+        'custom-gray': 'rgb(238, 236, 236)',
+      },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
+        'bebas-neue': ['"Bebas Neue"', 'sans-serif'],
       },
       colors: {
         primary: '#141416',
