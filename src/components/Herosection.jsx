@@ -7,31 +7,38 @@ import {
   FaVimeo,
   FaEnvelope,
 } from 'react-icons/fa';
+import useIsMobile from '../components/isMobile';
 
 const HeroSection = () => {
+  const isMobile = useIsMobile();
+
   return (
     <div className="relative p-0 m-0">
       {/* Image with Next.js Image Component */}
-      <Image
-        src="/assets/images/home_background.jpg"
-        className="block md:hidden md:w-[100%]  h-screen absolute inset-0 object-cover"
-        alt="hero_image"
-        width={500}
-        height={1200}
-      />
-      <video
-        className="hidden md:w-[100%] md:block h-screen absolute inset-0 object-cover "
-        autoPlay
-        muted
-        loop
-      >
-        <source
-          className="hidden  md:block "
-          src="/assets/videos/hero-video.mp4"
-          type="video/mp4"
+
+      {isMobile ? (
+        <Image
+          src="/assets/images/home_background.jpg"
+          className="block md:hidden md:w-[100%]  h-screen absolute inset-0 object-cover"
+          alt="hero_image"
+          width={500}
+          height={1200}
         />
-        Your browser does not support the video tag.
-      </video>
+      ) : (
+        <video
+          className="hidden md:w-[100%] md:block h-screen absolute inset-0 object-cover "
+          autoPlay
+          muted
+          loop
+        >
+          <source
+            className="hidden  md:block "
+            src="/assets/videos/hero-video.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+      )}
       {/* Content overlay */}
       <div className="sm:bg-opacity-60 w-auto h-screen absolute inset-0 object-cover  flex flex-col justify-center items-center text-white p-4 md:p-8 md:bg-black md:bg-opacity-90 ">
         {/* <div className="absolute sm:pt-20 py-[500px] md:pt-20 py-[500px]  lg:top-0 left-0 w-full h-full lg:py-[485px] px-32 flex flex-col justify-center items-center text-white p-4 md:p-8 bg-black bg-opacity-90 0"> */}
