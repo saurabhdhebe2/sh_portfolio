@@ -25,7 +25,11 @@ const HeroSection = () => {
         muted
         loop
       >
-        <source src="/assets/videos/hero-video.mp4" type="video/mp4" />
+        <source
+          className="hidden  md:block "
+          src="/assets/videos/hero-video.mp4"
+          type="video/mp4"
+        />
         Your browser does not support the video tag.
       </video>
       {/* Content overlay */}
