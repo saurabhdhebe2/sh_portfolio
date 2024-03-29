@@ -1,12 +1,12 @@
-import { useState } from 'react';
-
 const VideoDetail = ({ video }) => {
   return (
     <div className="relative">
       <iframe
         id={`video-${video.id}`}
-        className="w-full h-40"
-        src={video.url}
+        className={` w-[90%] h-80  mx-auto ${
+          video.isVertical ? 'bg-black' : 'my-[-50px]'
+        }`}
+        src={video.src}
         title="Vimeo video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

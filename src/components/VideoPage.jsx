@@ -5,174 +5,68 @@ const VideoPage = ({ category }) => {
   const videos = {
     tv_shows: [
       {
-        id: 1,
-        url: 'https://player.vimeo.com/video/913349763?h=aaff662dea',
-        details: {
-          title: 'jassie gill / iifa awards 2019 / BTS',
-          description: 'Description of Video 1',
-        },
+        src: 'https://player.vimeo.com/video/913349763?h=aaff662dea',
       },
       {
-        id: 2,
-        url: 'https://player.vimeo.com/video/913364059?h=ee628b6799',
-        details: {
-          title: 'Malshej Ghat',
-          description: 'Description of Video 2',
-        },
+        src: 'https://player.vimeo.com/video/913364059?h=ee628b6799',
       },
-
-      // Add more videos as needed
     ],
     music_films: [
       {
-        id: 1,
-        type: 'youtube',
-        url: 'https://player.vimeo.com/video/809083723?h=2d1e3dbc1b',
-        details: {
-          title: 'jassie gill / iifa awards 2019 / BTS',
-          description: 'Description of Video 1',
-        },
+        src: 'https://player.vimeo.com/video/809083723?h=2d1e3dbc1b',
       },
       {
-        id: 2,
-        type: 'youtube',
-        url: 'https://www.youtube.com/embed/Ixzpam2xgQ0?si=IT0bzn3JER-IXnaa',
-        details: {
-          title: 'Malshej Ghat',
-          description: 'Description of Video 2',
-        },
+        src: 'https://player.vimeo.com/video/754298465?h=a1f4f8bda4',
       },
-      {
-        id: 3,
-        type: 'vimeo',
-        url: 'https://player.vimeo.com/video/913349763?h=aaff662dea',
-        details: {
-          title: 'ISL',
-          description:
-            'In The Stands with Lallianzuala Chhangte Playing for India Career defining call with Des Fandom',
-        },
-      },
-      // Add more videos as needed
     ],
     reels: [
       {
-        id: 1,
-        type: 'youtube',
-        url: 'https://www.youtube.com/embed/Ixzpam2xgQ0?si=IT0bzn3JER-IXnaa',
-        details: {
-          title: 'Malshej Ghat',
-          description: 'Description of Video 2',
-        },
+        src: 'https://player.vimeo.com/video/913354685?h=88efceef0e',
+        isVertical: true,
       },
       {
-        id: 2,
-        type: 'youtube',
-        url: 'https://www.youtube.com/embed/21Y_FDUq1uY?si=n60xRrzIk4-gh7ez',
-        details: {
-          title: 'jassie gill / iifa awards 2019 / BTS',
-          description: 'Description of Video 1',
-        },
+        src: 'https://player.vimeo.com/video/784783087?h=1d21263650',
+        isVertical: true,
       },
     ],
     ads: [
       {
-        id: 1,
-        type: 'youtube',
-        url: 'https://www.youtube.com/embed/21Y_FDUq1uY?si=n60xRrzIk4-gh7ez',
-        details: {
-          title: 'jassie gill / iifa awards 2019 / BTS',
-          description: 'Description of Video 1',
-        },
+        src: 'https://player.vimeo.com/video/409644923?h=11401b50f1',
       },
       {
-        id: 2,
-        type: 'youtube',
-        url: 'https://www.youtube.com/embed/Ixzpam2xgQ0?si=IT0bzn3JER-IXnaa',
-        details: {
-          title: 'Malshej Ghat',
-          description: 'Description of Video 2',
-        },
-        type: 'youtube',
+        src: 'https://player.vimeo.com/video/750342201?h=005205d3e6',
       },
     ],
     personal_projects: [
       {
-        id: 1,
-        type: 'youtube',
-        url: 'https://www.youtube.com/embed/21Y_FDUq1uY?si=n60xRrzIk4-gh7ez',
-        details: {
-          title: 'jassie gill / iifa awards 2019 / BTS',
-          description: 'Description of Video 1',
-        },
+        src: 'https://player.vimeo.com/video/809083723?h=2d1e3dbc1b',
       },
       {
-        id: 2,
-        type: 'youtube',
-        url: 'https://www.youtube.com/embed/Ixzpam2xgQ0?si=IT0bzn3JER-IXnaa',
-        details: {
-          title: 'Malshej Ghat',
-          description: 'Description of Video 2',
-        },
+        src: 'https://player.vimeo.com/video/809083723?h=2d1e3dbc1b',
       },
     ],
     after_movies: [
       {
-        id: 1,
-        type: 'youtube',
-        url: 'https://www.youtube.com/embed/21Y_FDUq1uY?si=n60xRrzIk4-gh7ez',
-        details: {
-          title: 'jassie gill / iifa awards 2019 / BTS',
-          description: 'Description of Video 1',
-        },
+        src: 'https://player.vimeo.com/video/809083723?h=2d1e3dbc1b',
       },
       {
-        id: 2,
-        type: 'youtube',
-        url: 'https://www.youtube.com/embed/Ixzpam2xgQ0?si=IT0bzn3JER-IXnaa',
-        details: {
-          title: 'Malshej Ghat',
-          description: 'Description of Video 2',
-        },
+        src: 'https://player.vimeo.com/video/809083723?h=2d1e3dbc1b',
       },
     ],
     weddings: [
       {
-        id: 1,
-        type: 'youtube',
-        url: 'https://www.youtube.com/embed/21Y_FDUq1uY?si=n60xRrzIk4-gh7ez',
-        details: {
-          title: 'jassie gill / iifa awards 2019 / BTS',
-          description: 'Description of Video 1',
-        },
+        src: 'https://player.vimeo.com/video/282464036?h=94707a710a',
       },
       {
-        id: 2,
-        type: 'youtube',
-        url: 'https://www.youtube.com/embed/Ixzpam2xgQ0?si=IT0bzn3JER-IXnaa',
-        details: {
-          title: 'Malshej Ghat',
-          description: 'Description of Video 2',
-        },
+        src: 'https://player.vimeo.com/video/750338228?h=a9358e08ec',
       },
     ],
     travel: [
       {
-        id: 1,
-        type: 'youtube',
-        url: 'https://www.youtube.com/embed/21Y_FDUq1uY?si=n60xRrzIk4-gh7ez',
-        details: {
-          title: 'jassie gill / iifa awards 2019 / BTS',
-          description: 'Description of Video 1',
-        },
+        src: 'https://player.vimeo.com/video/750338759?h=6dc02af66b',
       },
       {
-        id: 2,
-        type: 'youtube',
-        url: 'https://www.youtube.com/embed/Ixzpam2xgQ0?si=IT0bzn3JER-IXnaa',
-        details: {
-          title: 'Malshej Ghat',
-          description: 'Description of Video 2',
-        },
+        src: 'https://player.vimeo.com/video/409645031?h=237f89cf86',
       },
     ],
   };
@@ -180,7 +74,9 @@ const VideoPage = ({ category }) => {
     console.log('==', videos[category]);
   }, []);
   return (
-    <div className="grid sm:grid-col-1 gap-2 md:grid-col-2 gap-2 lg:grid-cols-3 gap-4 mx-auto py-8">
+    <div
+      className={`grid sm:grid-col-1 gap-1 md:grid-col-2 gap-2 lg:grid-cols-3 gap-4 mx-auto lg:py-8`}
+    >
       {videos[category].length &&
         videos[category].map((video, index) => (
           <div key={index}>{video && <VideoDetail video={video} />}</div>
