@@ -12,12 +12,15 @@ const HeroSection = () => {
   return (
     <div className="relative p-0 m-0">
       {/* Image with Next.js Image Component */}
-
+      <Image
+        src="/assets/images/home_background.jpg"
+        className="md:w-[100%] md:block h-screen absolute inset-0 object-cover"
+        alt="hero_image"
+        width={500}
+        height={1200}
+      />
       <video
-        // className=""
-        className="w-[100%] h-screen absolute inset-0 object-cover"
-        // width="1920"
-        // height="1080"
+        className="hidden  md:w-[100%] md:block h-screen absolute inset-0 object-cover"
         autoPlay
         muted
         loop
@@ -26,7 +29,7 @@ const HeroSection = () => {
         Your browser does not support the video tag.
       </video>
       {/* Content overlay */}
-      <div className="w-auto h-screen absolute inset-0 object-cover  flex flex-col justify-center items-center text-white p-4 md:p-8 bg-black bg-opacity-90 0">
+      <div className="sm:bg-opacity-60 w-auto h-screen absolute inset-0 object-cover  flex flex-col justify-center items-center text-white p-4 md:p-8 md:bg-black bg-opacity-90 0">
         {/* <div className="absolute sm:pt-20 py-[500px] md:pt-20 py-[500px]  lg:top-0 left-0 w-full h-full lg:py-[485px] px-32 flex flex-col justify-center items-center text-white p-4 md:p-8 bg-black bg-opacity-90 0"> */}
         <h1 className="text-2xl md:text-4xl text-center font-bold mb-4 md:mb-6">
           Shubham Dhebe

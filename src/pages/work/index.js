@@ -16,11 +16,14 @@ const Work = () => {
   return (
     <RootLayout isNav={!isMobile}>
       <div className="min-h-screen sm:pt-34 md:pt-52 mx-4 mx-20 lg:py-8">
-        <div className="flex sm:pt-36 md:flex-row  items-start lg:items-center">
-          <Link href="/" className="text-white font-semibold text-lg md:mr-4">
+        <div className="flex sm:pt-36 md:flex-row  items-center lg:items-center">
+          <Link
+            href="/"
+            className="text-white sm:mt-8 md:mt-8 font-semibold text-lg md:mr-4 lg:mt-0 "
+          >
             HOME
           </Link>
-          <div className="sm:mt-4 mt-[3rem] w-12 mt-3 ml-4 md:my-4 my-0 lg:w-12 h-px mr-4 opacity-40 bg-white "></div>
+          <div className="sm: w-12 ml-4 md:my-4 my-0 lg:w-12 h-px mr-4 opacity-40 bg-white "></div>
           <h2 className="text-cyan-300 font-semibold text-lg">WORK</h2>
           {isMobile && (
             <div className="ml-16">
