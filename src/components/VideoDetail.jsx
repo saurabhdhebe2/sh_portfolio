@@ -5,9 +5,9 @@ const VideoDetail = ({ video }) => {
     <div className="relative">
       <iframe
         id={`video-${video.id}`}
-        className="w-full h-60"
+        className="w-full h-40"
         src={video.url}
-        title="YouTube video player"
+        title="Vimeo video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerPolicy="strict-origin-when-cross-origin"

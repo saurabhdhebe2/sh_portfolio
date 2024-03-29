@@ -6,7 +6,7 @@ const VideoPage = ({ category }) => {
     tv_shows: [
       {
         id: 1,
-        url: 'https://player.vimeo.com/video/913364059?h=ee628b6799',
+        url: 'https://player.vimeo.com/video/913349763?h=aaff662dea',
         details: {
           title: 'jassie gill / iifa awards 2019 / BTS',
           description: 'Description of Video 1',
@@ -14,7 +14,7 @@ const VideoPage = ({ category }) => {
       },
       {
         id: 2,
-        url: 'https://www.youtube.com/embed/Ixzpam2xgQ0?si=IT0bzn3JER-IXnaa',
+        url: 'https://player.vimeo.com/video/913364059?h=ee628b6799',
         details: {
           title: 'Malshej Ghat',
           description: 'Description of Video 2',
