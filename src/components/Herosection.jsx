@@ -64,12 +64,13 @@ const HeroSection = () => {
         </div>
       </div>
       {/* Social buttons */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-4 ">
+      <div className="absolute bottom-32 md:bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-4 ">
         {/* Instagram */}
         <Link
           href="https://www.instagram.com/shubham.dhebe"
           target="_blank"
           rel="noopener noreferrer"
+          className=" "
         >
           <FaInstagram className="text-white font-bebas-neue font-extrabold border-button border rounded-lg p-2 text-4xl md:text-4xl hover:text-black  hover:bg-white transition duration-300 " />
         </Link>
