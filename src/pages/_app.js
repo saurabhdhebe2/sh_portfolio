@@ -9,8 +9,15 @@ function MyApp({ Component, pageProps }) {
       {/* Render the page component */}
       <Head>
         <title>Shubham Dhebe</title>
-        <meta name="description" content="Your website description goes here" />
-        {/* <link rel="icon" src="/assets/icons/favicon.ico" /> */}
+        <meta
+          name="description"
+          content="Shubham Dhebe: Professional video editor and photographer specializing in editing for various categories including reels, TV shows, music, travel films, advertisements, weddings, personal projects, after movies, and more."
+        />
+        <meta
+          name="keywords"
+          content="video editor, photographer, reel editing, TV show editing, music editing, travel film editing, advertisement editing, wedding editing, personal project editing, after movie editing"
+        />
+        <link rel="icon" href="/assets/icons/favicon.ico"></link>
       </Head>
       <Component {...pageProps} />
     </Fragment>

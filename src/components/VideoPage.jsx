@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import VideoDetail from './VideoDetail';
 
 const VideoPage = ({ category }) => {
@@ -70,9 +69,6 @@ const VideoPage = ({ category }) => {
       },
     ],
   };
-  useEffect(() => {
-    console.log('==', videos[category]);
-  }, []);
   return (
     <div
       className={`grid sm:grid-col-1 gap-1 md:grid-col-2 gap-2 lg:grid-cols-3 gap-4 mx-auto lg:py-8`}
