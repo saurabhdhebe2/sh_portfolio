@@ -56,7 +56,9 @@ const Navbar = () => {
           </svg>
         </button> */}
         <div className=" tracking-widest space-x-8">
-          <Link href="/work">WORK</Link>
+          <Link className="font-bebas-neue font-thin text-3xl" href="/work">
+            WORK
+          </Link>
         </div>
       </div>
       {/* Links on the right */}
