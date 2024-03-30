@@ -10,13 +10,26 @@ const HeroSection = () => {
     <div className="relative p-0 m-0 min-h-screen">
       {/* Image with Next.js Image Component */}
       {isMobile ? (
-        <Image
-          src="/assets/images/home_background.jpg"
+        // <Image
+        //   src="/assets/images/home_background.jpg"
+        //   className="block md:hidden md:w-[100%]  h-screen absolute inset-0 object-cover"
+        //   alt="hero_image"
+        //   width={500}
+        //   height={1200}
+        // />
+        <video
           className="block md:hidden md:w-[100%]  h-screen absolute inset-0 object-cover"
-          alt="hero_image"
-          width={500}
-          height={1200}
-        />
+          autoPlay
+          muted
+          loop
+        >
+          <source
+            className="hidden  md:block "
+            src="/assets/videos/mobile_background.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
       ) : (
         <video
           className="hidden md:w-[100%] md:block h-screen absolute inset-0 object-cover "
@@ -74,7 +87,7 @@ const HeroSection = () => {
           <svg
             stroke="currentColor"
             fill="currentColor"
-            stroke-width="0"
+            strokeWidth="0"
             viewBox="0 0 448 512"
             className="text-white font-bebas-neue font-extrabold border-secondary border-2 rounded-lg p-2 text-4xl md:text-4xl hover:text-black  hover:bg-white transition duration-300 "
             height="50px"
@@ -94,7 +107,7 @@ const HeroSection = () => {
           <svg
             stroke="currentColor"
             fill="currentColor"
-            stroke-width="0"
+            strokeWidth="0"
             viewBox="0 0 448 512"
             className="text-white font-bebas-neue font-extrabold border-secondary border-2 rounded-lg p-2 text-4xl md:text-4xl hover:text-black  hover:bg-white transition duration-300 "
             height="50px"
@@ -114,7 +127,7 @@ const HeroSection = () => {
           <svg
             stroke="currentColor"
             fill="currentColor"
-            stroke-width="0"
+            strokeWidth="0"
             viewBox="0 0 576 512"
             className="text-white font-bebas-neue font-extrabold border-secondary border-2 rounded-lg p-2 text-4xl md:text-4xl hover:text-black  hover:bg-white transition duration-300 "
             height="50px"
@@ -134,7 +147,7 @@ const HeroSection = () => {
           <svg
             stroke="currentColor"
             fill="currentColor"
-            stroke-width="0"
+            strokeWidth="0"
             viewBox="0 0 512 512"
             className="text-white font-bebas-neue font-extrabold border-secondary border-2 rounded-lg p-2 text-4xl md:text-4xl hover:text-black  hover:bg-white transition duration-300 "
             height="50px"
