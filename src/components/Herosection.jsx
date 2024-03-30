@@ -33,15 +33,15 @@ const HeroSection = () => {
         </video>
       )}
       {/* Content overlay */}
-      <div className="bg-black bg-opacity-60 w-auto  absolute inset-0 object-cover  flex flex-col justify-center items-center text-white p-4 mt-[-100px] md:p-8 md:mt-0 md:bg-black md:bg-opacity-90">
+      <div className="bg-black bg-opacity-60 w-auto  absolute inset-0 object-cover  flex flex-col justify-center items-center text-white p-4 mt-[-100px] md:p-8 md:mt-0 md:bg-black md:bg-opacity-60">
         <p className="font-bebas-neue text-md text-center font-extralight tracking-widest">
-          FILMMAKER | PHOTOGRAPHER
+          FILMMAKER | STORYTELLER
         </p>
         <h4 className="font-bebas-neue text-5xl lg:text-5xl  text-center font-thin text-custom-gray ">
           Shubham Dhebe
         </h4>
-        <p className="font-bebas-neue sm:text-sm md:text-xl text-center font-extralight tracking-widest mb-4 md:mb-6">
-          @shubham.dhebe
+        <p className="font-bebas-neue sm:text-sm md:text-lg text-center font-extralight tracking-widest mb-4 md:mb-6">
+          48fps go faster!
         </p>
         <div className="flex flex-row space-x-4 mt-4 md:space-x-4 md:flex-row md:space-y-0 md:my-8">
           <button className="bg-primary-transparent text-white px-4 py-2 md:py-4 border-button border-2 rounded-md hover:text-gray-300">
