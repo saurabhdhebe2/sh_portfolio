@@ -71,7 +71,7 @@ const HeroSection = () => {
           rel="noopener noreferrer"
           className=" "
         >
-          <FaInstagram className="text-white font-bebas-neue font-extrabold border-button border rounded-lg p-2 text-4xl md:text-4xl hover:text-black  hover:bg-white transition duration-300 " />
+          <FaInstagram className="text-white font-bebas-neue font-extrabold border-secondary border rounded-lg p-2 text-4xl md:text-4xl hover:text-black  hover:bg-white transition duration-300 " />
         </Link>
         {/* LinkedIn */}
         <Link
@@ -80,7 +80,7 @@ const HeroSection = () => {
           rel="noopener noreferrer"
           className="hover:bg-customized-gray hover:text-black hover:bg-opacity-20 transition duration-300"
         >
-          <FaLinkedin className="text-white font-bebas-neue font-extrabold border-button border rounded-lg p-2 text-4xl md:text-4xl hover:text-black  hover:bg-white transition duration-300 " />
+          <FaLinkedin className="text-white font-bebas-neue font-extrabold border-secondary border rounded-lg p-2 text-4xl md:text-4xl hover:text-black  hover:bg-white transition duration-300 " />
         </Link>
         {/* YouTube */}
         <Link
@@ -89,16 +89,16 @@ const HeroSection = () => {
           rel="noopener noreferrer"
           className="hover:bg-customized-gray hover:text-black hover:bg-opacity-20 transition duration-300"
         >
-          <FaYoutube className="text-white font-bebas-neue font-extrabold border-button border rounded-lg p-2 text-4xl md:text-4xl hover:text-black  hover:bg-white transition duration-300 " />
+          <FaYoutube className="text-white font-bebas-neue font-extrabold border-secondary border rounded-lg p-2 text-4xl md:text-4xl hover:text-black  hover:bg-white transition duration-300 " />
         </Link>
         {/* Gmail */}
         <Link
-          href="mailto:sd123@gmail.com"
+          href="mailto:work@shubhamdhebe.com"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:bg-customized-gray hover:text-black hover:bg-opacity-20 transition duration-300"
         >
-          <FaEnvelope className="text-white font-bebas-neue font-extrabold border-button border rounded-lg p-2 text-4xl md:text-4xl hover:text-black  hover:bg-white transition duration-300 " />
+          <FaEnvelope className="text-white font-bebas-neue font-extrabold border-secondary border rounded-lg p-2 text-4xl md:text-4xl hover:text-black  hover:bg-white transition duration-300 " />
         </Link>
       </div>
     </div>
