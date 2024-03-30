@@ -18,15 +18,15 @@ const HeroSection = () => {
         //   height={1200}
         // />
         <video
-          className="block md:hidden md:w-[100%]  h-screen absolute inset-0 object-cover"
+          className="block  md:hidden md:w-[100%]  h-screen absolute inset-0 object-cover"
           autoPlay
           muted
           loop
           playsInline
         >
           <source
-            className="hidden  md:block "
-            src="/assets/videos/mobile_background.mp4"
+            className=""
+            src="/assets/videos/mobile_background_new.mp4"
             type="video/mp4"
           />
           Your browser does not support the video tag.
