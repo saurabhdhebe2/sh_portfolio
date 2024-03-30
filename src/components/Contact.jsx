@@ -93,7 +93,10 @@ const GetInTouchForm = () => {
               />
             </div>
             <div className="flex-grow">
-              <label htmlFor="email" className="block my-2 font-semibold">
+              <label
+                htmlFor="email"
+                className="sm:mt-2 md:mt-0 block mb-2 font-semibold"
+              >
                 EMAIL:
               </label>
               <input
