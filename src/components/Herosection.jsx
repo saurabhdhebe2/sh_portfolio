@@ -22,6 +22,7 @@ const HeroSection = () => {
           autoPlay
           muted
           loop
+          playsInline
         >
           <source
             className="hidden  md:block "
