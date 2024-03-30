@@ -33,7 +33,7 @@ const HeroSection = () => {
         </video>
       )}
       {/* Content overlay */}
-      <div className="bg-black bg-opacity-60 w-auto  absolute inset-0 object-cover  flex flex-col justify-center items-center text-white p-4 mt-[-100px] md:p-8 md:mt-0 md:bg-black md:bg-opacity-95">
+      <div className="bg-black bg-opacity-60 w-auto  absolute inset-0 object-cover  flex flex-col justify-center items-center text-white p-4 mt-[-100px] md:p-8 md:mt-0 md:bg-black md:bg-opacity-90">
         <p className="font-bebas-neue text-md text-center font-extralight tracking-widest">
           FILMMAKER | PHOTOGRAPHER
         </p>
