@@ -7,11 +7,11 @@ const Footer = () => {
       <div className="flex flex-col md:flex-row items-center md:mr-auto">
         <Link
           href="https://www.youtube.com/@ShubhamDhebe"
-          className="text-white font-semibold text-lg md:mr-4 mb-2 md:mb-0"
+          className="text-white font-semibold text-lg mb-0 md:mr-4 mb-2 md:mb-0"
         >
           YOUTUBE
         </Link>
-        <div className="w-full md:w-12 md:mx-4 mt-4  md:h-px lg:mt-0 opacity-40 bg-white"></div>
+        <div className="w-full md:w-12 md:mx-4 mt-4 h-px mt-0 md:h-px lg:mt-0 opacity-40 bg-white"></div>
         <Link
           href="https://www.instagram.com/shubham.dhebe"
           className="text-white font-semibold text-lg md:ml-4"
