@@ -9,6 +9,30 @@ const VideoPage = ({ category }) => {
       {
         src: 'https://player.vimeo.com/video/913364059?h=ee628b6799',
       },
+      {
+        src: 'https://www.youtube.com/embed/190Dkfa4WaA?si=Q1--5JwennCyBYG_',
+        type: 'yt',
+      },
+      {
+        src: 'https://www.youtube.com/embed/wCdyZnggx5A?si=5byOEcO6o4c8S7e4',
+        type: 'yt',
+      },
+      {
+        src: 'https://www.youtube.com/embed/yRv0x6_k8K8?si=aIPIq6QUbLa12XmT',
+        type: 'yt',
+      },
+      {
+        src: 'https://www.youtube.com/embed/BukU1uTku9k?si=ua9J69PdBiWC-ajg',
+        type: 'yt',
+      },
+      {
+        src: 'https://www.youtube.com/embed/2eBULBNFrp0?si=uQd7o3i8wQrag6zD',
+        type: 'yt',
+      },
+      {
+        src: 'https://www.youtube.com/embed/6faZ77L94Go?si=NsRSg9HEhmkz6ZB-',
+        type: 'yt',
+      },
     ],
     music_films: [
       {
@@ -16,6 +40,21 @@ const VideoPage = ({ category }) => {
       },
       {
         src: 'https://player.vimeo.com/video/754298465?h=a1f4f8bda4',
+      },
+      {
+        src: 'https://www.youtube.com/embed/MODmzQh551Q?si=TiyRgEF44X_MZOtG',
+        type: 'yt',
+      },
+      {
+        src: 'https://player.vimeo.com/video/754298465?h=a1f4f8bda4',
+      },
+      {
+        src: 'https://www.youtube.com/embed/biGmrEgmx64?si=6k7Su0I5LO-QffJG',
+        type: 'yt',
+      },
+      {
+        src: 'https://www.youtube.com/embed/i6v-LBQ9jt4?si=8EOsvNYyOEsMu0z-',
+        type: 'yt',
       },
     ],
     reels: [
@@ -75,7 +114,12 @@ const VideoPage = ({ category }) => {
     >
       {videos[category].length &&
         videos[category].map((video, index) => (
-          <div key={index}>{video && <VideoDetail video={video} />}</div>
+          <div
+            className={`${video.type == 'yt' ? 'my-16' : 'mb-0'} lg:my-16`}
+            key={index}
+          >
+            {video && <VideoDetail video={video} />}
+          </div>
         ))}
     </div>
   );

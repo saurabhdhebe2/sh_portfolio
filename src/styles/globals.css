@@ -21,3 +21,22 @@ root {
 .bg-primary-transparent {
   background-color: rgba(11, 15, 25, 0.8); /* Adjust opacity value as needed */
 }
+
+/* CSS for SkeletonLoader animation */
+.skeleton-loader {
+  width: 100%;
+  height: 100%;
+  background-color: #e5e7eb; /* Adjust color as needed */
+  border-radius: 0.5rem; /* Adjust border radius as needed */
+  animation: skeleton-loading 1.5s infinite linear;
+}
+
+/* CSS animation keyframes */
+@keyframes skeleton-loading {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
