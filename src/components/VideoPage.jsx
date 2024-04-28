@@ -3,12 +3,12 @@ import VideoDetail from './VideoDetail';
 const VideoPage = ({ category }) => {
   const videos = {
     tv_shows: [
-      {
-        src: 'https://player.vimeo.com/video/913349763?h=aaff662dea',
-      },
-      {
-        src: 'https://player.vimeo.com/video/913364059?h=ee628b6799',
-      },
+      // {
+      //   src: 'https://player.vimeo.com/video/913349763?h=aaff662dea',
+      // },
+      // {
+      //   src: 'https://player.vimeo.com/video/913364059?h=ee628b6799',
+      // },
       {
         src: 'https://www.youtube.com/embed/190Dkfa4WaA?si=Q1--5JwennCyBYG_',
         type: 'yt',
@@ -35,19 +35,19 @@ const VideoPage = ({ category }) => {
       },
     ],
     music_films: [
-      {
-        src: 'https://player.vimeo.com/video/809083723?h=2d1e3dbc1b',
-      },
-      {
-        src: 'https://player.vimeo.com/video/754298465?h=a1f4f8bda4',
-      },
+      // {
+      //   src: 'https://player.vimeo.com/video/809083723?h=2d1e3dbc1b',
+      // },
+      // {
+      //   src: 'https://player.vimeo.com/video/754298465?h=a1f4f8bda4',
+      // },
       {
         src: 'https://www.youtube.com/embed/MODmzQh551Q?si=TiyRgEF44X_MZOtG',
         type: 'yt',
       },
-      {
-        src: 'https://player.vimeo.com/video/754298465?h=a1f4f8bda4',
-      },
+      // {
+      //   src: 'https://player.vimeo.com/video/754298465?h=a1f4f8bda4',
+      // },
       {
         src: 'https://www.youtube.com/embed/biGmrEgmx64?si=6k7Su0I5LO-QffJG',
         type: 'yt',
