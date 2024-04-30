@@ -236,9 +236,9 @@ const VideoPage = ({ category }) => {
       {videos[category].length &&
         videos[category].map((video, index) => (
           <div
-            className={` ${video.type == 'yt' ? 'my-28' : 'mb-0'}  ${
-              video.isVertical && video.type != 'yt' ? 'my-36' : 'mb-0'
-            } lg:my-16`}
+            className={`${
+              video.isVertical && video.type != 'yt' ? 'my-36' : 'mt-4'
+            } ${video.type == 'yt' ? 'my-28 mt-4' : 'my-8'}   lg:my-16`}
             key={index}
           >
             {video && <VideoDetail video={video} />}
