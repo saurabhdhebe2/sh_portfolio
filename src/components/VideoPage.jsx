@@ -153,7 +153,12 @@ const VideoPage = ({ category }) => {
         src: 'https://player.vimeo.com/video/750342201?h=005205d3e6',
       },
     ],
-    personal_projects: [
+    passion_projects: [
+        {
+        src: 'https://www.youtube.com/embed/Z7zOJvWq06M?si=I5IN2fhJ88bI5MWT',
+        type: 'yt',
+        isVertical: true,
+      },
       {
         src: 'https://player.vimeo.com/video/809083723?h=2d1e3dbc1b',
       },
