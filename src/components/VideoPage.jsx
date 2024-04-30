@@ -154,18 +154,18 @@ const VideoPage = ({ category }) => {
       },
     ],
     passion_projects: [
-        {
-        src: 'https://www.youtube.com/embed/Z7zOJvWq06M?si=I5IN2fhJ88bI5MWT',
-        type: 'yt',
-        isVertical: true,
-      },
-      {
-        src: 'https://player.vimeo.com/video/809083723?h=2d1e3dbc1b',
-      },
-      {
-        src: 'https://player.vimeo.com/video/809083723?h=2d1e3dbc1b',
-      },
-    ],
+ { src: 'https://www.youtube.com/embed/Z7zOJvWq06M?si=I5IN2fhJ88bI5MWT', type: 'yt' },
+
+ { src: 'https://www.youtube.com/embed/21Y_FDUq1uY?si=hXEhZYRcQL7SJO3z', type: 'yt' },
+
+ { src: 'https://www.youtube.com/embed/g3_JoqycZbI?si=UiPFL6dsT1PZ--a4', type: 'yt' },
+
+ { src: 'https://www.youtube.com/embed/CVYLh1BGAP4?si=4jQzWjFOyv_FEmcd', type: 'yt' },
+
+
+ { src: 'https://www.youtube.com/embed/urdljVOrmhA?si=uyPdVdZHU__Xo_ro', type: 'yt' },
+
+ ],
     Documentaries: [
       {
         src: 'https://www.youtube.com/embed/2oDAdTHuXe4?si=xJXqKHpJFyU_nP7T',
