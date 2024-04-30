@@ -54,7 +54,7 @@ const Work = () => {
             'Documentaries',
             'ads',
             'weddings',
-            'personal_projects',
+            'passion_projects',
           ].map((category, index) => (
             <h2
               key={index}
