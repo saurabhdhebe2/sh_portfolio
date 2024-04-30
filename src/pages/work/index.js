@@ -51,7 +51,7 @@ const Work = () => {
             'music_films',
             'reels',
             'travel',
-            'after_movies',
+            'Documentaries',
             'ads',
             'weddings',
             'personal_projects',

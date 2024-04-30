@@ -146,7 +146,7 @@ const VideoPage = ({ category }) => {
         src: 'https://player.vimeo.com/video/809083723?h=2d1e3dbc1b',
       },
     ],
-    after_movies: [
+    Documentaries: [
       {
         src: 'https://www.youtube.com/embed/2oDAdTHuXe4?si=xJXqKHpJFyU_nP7T',
         type: 'yt',
