@@ -63,62 +63,77 @@ const VideoPage = ({ category }) => {
     reels: [
       {
         src: 'https://www.youtube.com/embed/zPBF0NGiEm4',
+        type: 'yt',
         isVertical: true,
       },
       {
         src: 'https://www.youtube.com/embed/jET8om_8XwY',
+        type: 'yt',
         isVertical: true,
       },
       {
         src: 'https://www.youtube.com/embed/AepnA7FfNXU ',
+        type: 'yt',
         isVertical: true,
       },
       {
         src: 'https://www.youtube.com/embed/gzmLeNl55Pc ',
+        type: 'yt',
         isVertical: true,
       },
       {
         src: 'https://www.youtube.com/embed/2XdLWONzHNo ',
+        type: 'yt',
         isVertical: true,
       },
       {
         src: 'https://www.youtube.com/embed/Sifs4QNj22Y',
+        type: 'yt',
         isVertical: true,
       },
       {
         src: 'https://www.youtube.com/embed/dXBwjWlPg0g',
+        type: 'yt',
         isVertical: true,
       },
       {
         src: 'https://www.youtube.com/embed/tjBpvKZfgCY',
+        type: 'yt',
         isVertical: true,
       },
       {
         src: 'https://www.youtube.com/embed/SoKq2UFfuFM',
+        type: 'yt',
         isVertical: true,
       },
       {
         src: 'https://www.youtube.com/embed/EHnUAlx_hPI',
+        type: 'yt',
         isVertical: true,
       },
       {
         src: 'https://www.youtube.com/embed/Vh7a45YKZR0',
+        type: 'yt',
         isVertical: true,
       },
       {
         src: 'https://www.youtube.com/embed/EHnUAlx_hPI',
+        type: 'yt',
         isVertical: true,
       },
       {
         src: 'https://www.youtube.com/embed/Vh7a45YKZR0',
+        type: 'yt',
         isVertical: true,
       },
       {
         src: 'https://www.youtube.com/embed/a9T_KPMZ5GM',
+        type: 'yt',
         isVertical: true,
       },
       {
         src: 'https://www.youtube.com/embed/OGx2b_szn5M',
+        type: 'yt',
         isVertical: true,
       },
       {
@@ -221,7 +236,9 @@ const VideoPage = ({ category }) => {
       {videos[category].length &&
         videos[category].map((video, index) => (
           <div
-            className={`${video.type == 'yt' ? 'my-16' : 'mb-0'} lg:my-16`}
+            className={` ${video.type == 'yt' ? 'my-28' : 'mb-0'}  ${
+              video.isVertical && video.type != 'yt' ? 'my-28' : 'mb-0'
+            } lg:my-16`}
             key={index}
           >
             {video && <VideoDetail video={video} />}
