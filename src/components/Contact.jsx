@@ -2,6 +2,7 @@
 import { useState, useContext, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import FlashMessage from './Flashmessage';
+import Image from 'next/image';
 
 const GetInTouchForm = () => {
   const [formData, setFormData] = useState({
@@ -69,69 +70,84 @@ const GetInTouchForm = () => {
       {flashMessage && (
         <FlashMessage message={flashMessage.message} type={flashMessage.type} />
       )}
-      <h2 className="text-2xl md:text-4xl font-bold mb-4">Get In Touch</h2>
-      <div className="w-full md:w-1/2">
-        <form onSubmit={handleSubmit} className="space-y-4">
-          <div className="flex flex-col md:flex-row md:space-x-4">
-            <div className="flex-grow">
-              <label
-                htmlFor="name"
-                className="block text-gray-200 mb-2 font-semibold"
-              >
-                NAME:
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                className="w-full bg-gray-800 text-white placeholder-gray-400 px-4 py-2 border-gray-800 rounded-sm focus:outline-none focus:border-blue-600"
-                placeholder="Enter your name"
-                required
-                autoComplete="off"
-              />
-            </div>
-            <div className="flex-grow">
-              <label htmlFor="email" className="block mb-2 font-semibold">
-                EMAIL:
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                placeholder="Enter your email"
-                className="w-full bg-gray-800 text-white placeholder-gray-400 px-4 py-2 border-gray-800 rounded-sm focus:outline-none focus:border-blue-600"
-                required
-                autoComplete="off"
-              />
-            </div>
-          </div>
+      <div className="flex justify-between gap-36">
+        <div className="w-full md:w-1/2">
+          <form onSubmit={handleSubmit} className="space-y-4">
+            <h2 className="text-2xl md:text-4xl font-bold mb-4 lg:mb-8">
+              Get In Touch
+            </h2>
 
-          <div className="mb-6">
-            <label htmlFor="message" className="block mb-2 font-semibold">
-              MESSAGE:
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-              placeholder="Start typing here..."
-              className="w-full bg-gray-800 text-white placeholder-gray-400 px-4 py-2 border-gray-800 rounded-sm focus:outline-none focus:border-blue-600"
-              rows={6}
-              required
-            ></textarea>
+            <div className="flex flex-col md:flex-row md:space-x-4">
+              <div className="flex-grow">
+                <label
+                  htmlFor="name"
+                  className="block text-gray-200 mb-2 font-semibold"
+                >
+                  NAME:
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  className="w-full bg-gray-800 text-white placeholder-gray-400 px-4 py-2 border-gray-800 rounded-sm focus:outline-none focus:border-blue-600"
+                  placeholder="Enter your name"
+                  required
+                  autoComplete="off"
+                />
+              </div>
+              <div className="flex-grow">
+                <label htmlFor="email" className="block mb-2 font-semibold">
+                  EMAIL:
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  placeholder="Enter your email"
+                  className="w-full bg-gray-800 text-white placeholder-gray-400 px-4 py-2 border-gray-800 rounded-sm focus:outline-none focus:border-blue-600"
+                  required
+                  autoComplete="off"
+                />
+              </div>
+            </div>
+
+            <div className="mb-6">
+              <label htmlFor="message" className="block mb-2 font-semibold">
+                MESSAGE:
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                placeholder="Start typing here..."
+                className="w-full bg-gray-800 text-white placeholder-gray-400 px-4 py-2 border-gray-800 rounded-sm focus:outline-none focus:border-blue-600"
+                rows={6}
+                required
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              className="bg-primary text-white py-2 px-4 rounded-md hover:bg-primary-dark w-full"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+        <div className="sm: hidden lg:block w-full md:w-1/2">
+          <div className="hidden md:block">
+            <Image
+              src={'/assets/images/shubham_dhebe.jpg'}
+              width={450}
+              height={450}
+              alt="shubham"
+            />
           </div>
-          <button
-            type="submit"
-            className="bg-primary text-white py-2 px-4 rounded-md hover:bg-primary-dark w-full"
-          >
-            Submit
-          </button>
-        </form>
+        </div>
       </div>
     </div>
   );

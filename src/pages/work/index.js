@@ -51,8 +51,8 @@ const Work = () => {
             'music_films',
             'reels',
             'travel',
-            'ads',
             'after_movies',
+            'ads',
             'weddings',
             'personal_projects',
           ].map((category, index) => (
