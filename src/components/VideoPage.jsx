@@ -3,12 +3,6 @@ import VideoDetail from './VideoDetail';
 const VideoPage = ({ category }) => {
   const videos = {
     tv_shows: [
-      // {
-      //   src: 'https://player.vimeo.com/video/913349763?h=aaff662dea',
-      // },
-      // {
-      //   src: 'https://player.vimeo.com/video/913364059?h=ee628b6799',
-      // },
       {
         src: 'https://www.youtube.com/embed/190Dkfa4WaA?si=Q1--5JwennCyBYG_',
         type: 'yt',
@@ -33,21 +27,18 @@ const VideoPage = ({ category }) => {
         src: 'https://www.youtube.com/embed/6faZ77L94Go?si=NsRSg9HEhmkz6ZB-',
         type: 'yt',
       },
+      {
+        src: 'https://player.vimeo.com/video/913349763?h=aaff662dea',
+      },
+      {
+        src: 'https://player.vimeo.com/video/913364059?h=ee628b6799',
+      },
     ],
     music_films: [
-      // {
-      //   src: 'https://player.vimeo.com/video/809083723?h=2d1e3dbc1b',
-      // },
-      // {
-      //   src: 'https://player.vimeo.com/video/754298465?h=a1f4f8bda4',
-      // },
       {
         src: 'https://www.youtube.com/embed/MODmzQh551Q?si=TiyRgEF44X_MZOtG',
         type: 'yt',
       },
-      // {
-      //   src: 'https://player.vimeo.com/video/754298465?h=a1f4f8bda4',
-      // },
       {
         src: 'https://www.youtube.com/embed/biGmrEgmx64?si=6k7Su0I5LO-QffJG',
         type: 'yt',
@@ -56,8 +47,80 @@ const VideoPage = ({ category }) => {
         src: 'https://www.youtube.com/embed/i6v-LBQ9jt4?si=8EOsvNYyOEsMu0z-',
         type: 'yt',
       },
+      {
+        src: 'https://www.youtube.com/embed/ZxTdI42JNUM?si=8V39cH8VvgqOrVBh',
+        type: 'yt',
+      },
+      {
+        src: 'https://www.youtube.com/embed/9sosXoO-jFI?si=9pY3O5xFzCw6sOor',
+        type: 'yt',
+      },
+      {
+        src: 'https://www.youtube.com/embed/IiIfOnjPFU8?si=sUPFd9rHOXrV_6MX',
+        type: 'yt',
+      },
     ],
     reels: [
+      {
+        src: 'https://www.youtube.com/embed/zPBF0NGiEm4',
+        isVertical: true,
+      },
+      {
+        src: 'https://www.youtube.com/embed/jET8om_8XwY',
+        isVertical: true,
+      },
+      {
+        src: 'https://www.youtube.com/embed/AepnA7FfNXU ',
+        isVertical: true,
+      },
+      {
+        src: 'https://www.youtube.com/embed/gzmLeNl55Pc ',
+        isVertical: true,
+      },
+      {
+        src: 'https://www.youtube.com/embed/2XdLWONzHNo ',
+        isVertical: true,
+      },
+      {
+        src: 'https://www.youtube.com/embed/Sifs4QNj22Y',
+        isVertical: true,
+      },
+      {
+        src: 'https://www.youtube.com/embed/dXBwjWlPg0g',
+        isVertical: true,
+      },
+      {
+        src: 'https://www.youtube.com/embed/tjBpvKZfgCY',
+        isVertical: true,
+      },
+      {
+        src: 'https://www.youtube.com/embed/SoKq2UFfuFM',
+        isVertical: true,
+      },
+      {
+        src: 'https://www.youtube.com/embed/EHnUAlx_hPI',
+        isVertical: true,
+      },
+      {
+        src: 'https://www.youtube.com/embed/Vh7a45YKZR0',
+        isVertical: true,
+      },
+      {
+        src: 'https://www.youtube.com/embed/EHnUAlx_hPI',
+        isVertical: true,
+      },
+      {
+        src: 'https://www.youtube.com/embed/Vh7a45YKZR0',
+        isVertical: true,
+      },
+      {
+        src: 'https://www.youtube.com/embed/a9T_KPMZ5GM',
+        isVertical: true,
+      },
+      {
+        src: 'https://www.youtube.com/embed/OGx2b_szn5M',
+        isVertical: true,
+      },
       {
         src: 'https://player.vimeo.com/video/913354685?h=88efceef0e',
         isVertical: true,
@@ -85,10 +148,32 @@ const VideoPage = ({ category }) => {
     ],
     after_movies: [
       {
-        src: 'https://player.vimeo.com/video/809083723?h=2d1e3dbc1b',
+        src: 'https://www.youtube.com/embed/Ni7mibOi0KE?si=8mYfLUZ9EnblEpEk',
+        type: 'yt',
       },
       {
-        src: 'https://player.vimeo.com/video/809083723?h=2d1e3dbc1b',
+        src: 'https://www.youtube.com/embed/UBhdRrCP1h0?si=r6sJWfbO84qzAvYT',
+        type: 'yt',
+      },
+      {
+        src: 'https://www.youtube.com/embed/2oDAdTHuXe4?si=xJXqKHpJFyU_nP7T',
+        type: 'yt',
+      },
+      {
+        src: 'https://www.youtube.com/embed/_2BVfGPy8QU?si=PKqimhEI_XFEUEf0',
+        type: 'yt',
+      },
+      {
+        src: 'https://www.youtube.com/embed/dzrMg1rGzrU?si=Cqz8o73drgPygxhe',
+        type: 'yt',
+      },
+      {
+        src: 'https://www.youtube.com/embed/K1E1WbEMLQo?si=luJZIpEMBjB3UeHo',
+        type: 'yt',
+      },
+      {
+        src: 'https://www.youtube.com/embed/zGLlqqTsd44?si=d4jxGvI2WaNhKsE0',
+        type: 'yt',
       },
     ],
     weddings: [
@@ -100,6 +185,26 @@ const VideoPage = ({ category }) => {
       },
     ],
     travel: [
+      {
+        src: 'https://www.youtube.com/embed/djC_8Xwzh2o?si=Dck9GDSObz95bveL',
+        type: 'yt',
+      },
+      {
+        src: 'https://www.youtube.com/embed/yVa4J4WvjIg?si=gGZLBGFkzWzd4Tjm ',
+        type: 'yt',
+      },
+      {
+        src: 'https://www.youtube.com/embed/Ixzpam2xgQ0?si=16grcytu07bYHmud  ',
+        type: 'yt',
+      },
+      {
+        src: 'https://www.youtube.com/embed/qqtrBvSJGrg?si=P21Q-kEQni7qPhs0  ',
+        type: 'yt',
+      },
+      {
+        src: 'https://www.youtube.com/embed/Rgoyvp9HdH0?si=FyCupc5uB_f19Ezf  ',
+        type: 'yt',
+      },
       {
         src: 'https://player.vimeo.com/video/750338759?h=6dc02af66b',
       },

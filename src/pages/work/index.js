@@ -50,11 +50,11 @@ const Work = () => {
             'tv_shows',
             'music_films',
             'reels',
-            'ads',
-            'weddings',
             'travel',
-            'personal_projects',
+            'ads',
             'after_movies',
+            'weddings',
+            'personal_projects',
           ].map((category, index) => (
             <h2
               key={index}
