@@ -48,13 +48,13 @@ const Work = () => {
         <div className="flex flex-wrap justify-center mt-8 space-x-8 ">
           {[
             'tv_shows',
+            'ads',
             'music_films',
             'reels',
             'travel',
-            'Documentaries',
-            'ads',
             'weddings',
             'passion_projects',
+            'Documentaries',
           ].map((category, index) => (
             <h2
               key={index}

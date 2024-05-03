@@ -271,6 +271,10 @@ const VideoPage = ({ category }) => {
         type: 'yt',
       },
       {
+        src: 'https://www.youtube.com/embed/YgY71xZ0peY  ',
+        type: 'yt',
+      },
+      {
         src: 'https://www.youtube.com/embed/Ixzpam2xgQ0?si=16grcytu07bYHmud  ',
         type: 'yt',
       },
@@ -280,10 +284,6 @@ const VideoPage = ({ category }) => {
       },
       {
         src: 'https://www.youtube.com/embed/Rgoyvp9HdH0?si=FyCupc5uB_f19Ezf  ',
-        type: 'yt',
-      },
-      {
-        src: 'https://www.youtube.com/embed/YgY71xZ0peY  ',
         type: 'yt',
       },
     ],
