@@ -63,7 +63,7 @@ const Work = () => {
                 selectedCategory === category
                   ? 'text-cyan-300'
                   : 'text-gray-100'
-              } hover:text-cyan-800 active:text-cyan-300`}
+              } hover:text-cyan-800 active:text-cyan-300 cursor-pointer`}
             >
               {category.toUpperCase().replace('_', ' ')}
             </h2>
