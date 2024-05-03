@@ -175,10 +175,10 @@ const VideoPage = ({ category }) => {
         src: 'https://www.youtube.com/embed/KxhRUlMfS2s',
         type: 'yt',
       },
-      {
-        src: 'https://www.youtube.com/embed/KxhRUlMfS2s',
-        type: 'yt',
-      },
+      // {
+      //   src: 'https://www.youtube.com/embed/KxhRUlMfS2s',
+      //   type: 'yt',
+      // },
     ],
     passion_projects: [
       {
