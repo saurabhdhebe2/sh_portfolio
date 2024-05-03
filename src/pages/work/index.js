@@ -19,7 +19,7 @@ const Work = () => {
         <div className="flex sm:pt-36 md:flex-row  items-center lg:items-center">
           <Link
             href="/"
-            className="text-white sm:mt-8 md:mt-8 font-semibold text-lg md:mr-4 lg:mt-0 "
+            className="text-white sm:mt-8 md:mt-8 font-semibold text-lg md:mr-0 lg:mt-0 "
           >
             HOME
           </Link>
