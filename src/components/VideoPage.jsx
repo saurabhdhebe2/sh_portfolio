@@ -27,12 +27,6 @@ const VideoPage = ({ category }) => {
         src: 'https://www.youtube.com/embed/6faZ77L94Go?si=NsRSg9HEhmkz6ZB-',
         type: 'yt',
       },
-      {
-        src: 'https://player.vimeo.com/video/913349763?h=aaff662dea',
-      },
-      {
-        src: 'https://player.vimeo.com/video/913364059?h=ee628b6799',
-      },
     ],
     music_films: [
       {
@@ -154,6 +148,14 @@ const VideoPage = ({ category }) => {
     ],
     ads: [
       {
+        src: 'https://www.youtube.com/embed/hCuAPduXktc',
+        type: 'yt',
+      },
+      {
+        src: 'https://www.youtube.com/embed/_laYrdrel08',
+        type: 'yt',
+      },
+      {
         src: 'https://www.youtube.com/embed/_kGccUm4Xxg?si=3RTWb7A6Q1IND5vS',
         type: 'yt',
       },
@@ -175,10 +177,6 @@ const VideoPage = ({ category }) => {
         src: 'https://www.youtube.com/embed/KxhRUlMfS2s',
         type: 'yt',
       },
-      // {
-      //   src: 'https://www.youtube.com/embed/KxhRUlMfS2s',
-      //   type: 'yt',
-      // },
     ],
     passion_projects: [
       {
