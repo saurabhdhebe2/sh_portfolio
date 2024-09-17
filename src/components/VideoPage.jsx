@@ -151,14 +151,14 @@ const VideoPage = ({ category }) => {
       },
     ],
     ads: [
-      {
-        src: 'https://www.youtube.com/embed/hCuAPduXktc',
-        type: 'yt',
-      },
-      {
-        src: 'https://www.youtube.com/embed/_laYrdrel08',
-        type: 'yt',
-      },
+      // {
+      //   src: 'https://www.youtube.com/embed/hCuAPduXktc',
+      //   type: 'yt',
+      // },
+      // {
+      //   src: 'https://www.youtube.com/embed/_laYrdrel08',
+      //   type: 'yt',
+      // },
       {
         src: 'https://www.youtube.com/embed/_kGccUm4Xxg?si=3RTWb7A6Q1IND5vS',
         type: 'yt',
