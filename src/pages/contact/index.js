@@ -13,9 +13,9 @@ const Contact = () => {
             href="mailto:work@shubhamdhebe.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-3xl font-bold mb-4 px-2"
+            className=" sm:text-2xl lg:text-3xl  font-bold mb-4 px-2"
           >
-            sdhebe123@gmail.com
+            work@shubhamdhebe.com
           </Link>
         </div>
         <div className="mt-12">
