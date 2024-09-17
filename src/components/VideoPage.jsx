@@ -4,6 +4,10 @@ const VideoPage = ({ category }) => {
   const videos = {
     tv_shows: [
       {
+        src: 'https://www.youtube.com/embed/m3O1lnPJszk?si=bbgsMFuHUIUuZLyA',
+        type: 'yt',
+      },
+      {
         src: 'https://www.youtube.com/embed/190Dkfa4WaA?si=Q1--5JwennCyBYG_',
         type: 'yt',
       },
@@ -23,12 +27,20 @@ const VideoPage = ({ category }) => {
         src: 'https://www.youtube.com/embed/2eBULBNFrp0?si=uQd7o3i8wQrag6zD',
         type: 'yt',
       },
-      {
-        src: 'https://www.youtube.com/embed/6faZ77L94Go?si=NsRSg9HEhmkz6ZB-',
-        type: 'yt',
-      },
+      // {
+      //   src: 'https://www.youtube.com/embed/6faZ77L94Go?si=NsRSg9HEhmkz6ZB-',
+      //   type: 'yt',
+      // },
     ],
     music_films: [
+      {
+        src: '  https://www.youtube.com/embed/l2W-6rrpGFs?si=NbkK0WIYKvnIHuDY',
+        type: 'yt',
+      },
+      {
+        src: 'https://www.youtube.com/embed/eALyYAwV774?si=B68zypoNDULn4Oii',
+        type: 'yt',
+      },
       {
         src: 'https://www.youtube.com/embed/MODmzQh551Q?si=TiyRgEF44X_MZOtG',
         type: 'yt',
@@ -39,14 +51,6 @@ const VideoPage = ({ category }) => {
       },
       {
         src: 'https://www.youtube.com/embed/i6v-LBQ9jt4?si=8EOsvNYyOEsMu0z-',
-        type: 'yt',
-      },
-      {
-        src: 'https://www.youtube.com/embed/ZxTdI42JNUM?si=8V39cH8VvgqOrVBh',
-        type: 'yt',
-      },
-      {
-        src: 'https://www.youtube.com/embed/9sosXoO-jFI?si=9pY3O5xFzCw6sOor',
         type: 'yt',
       },
       {
@@ -204,37 +208,37 @@ const VideoPage = ({ category }) => {
         type: 'yt',
       },
     ],
-    Documentaries: [
-      {
-        src: 'https://www.youtube.com/embed/2oDAdTHuXe4?si=xJXqKHpJFyU_nP7T',
-        type: 'yt',
-      },
-      {
-        src: 'https://www.youtube.com/embed/Ni7mibOi0KE?si=8mYfLUZ9EnblEpEk',
-        type: 'yt',
-      },
-      {
-        src: 'https://www.youtube.com/embed/zGLlqqTsd44?si=d4jxGvI2WaNhKsE0',
-        type: 'yt',
-      },
-      {
-        src: 'https://www.youtube.com/embed/UBhdRrCP1h0?si=r6sJWfbO84qzAvYT',
-        type: 'yt',
-      },
-      {
-        src: 'https://www.youtube.com/embed/K1E1WbEMLQo?si=luJZIpEMBjB3UeHo',
-        type: 'yt',
-      },
+    // Documentaries: [
+    //   {
+    //     src: 'https://www.youtube.com/embed/2oDAdTHuXe4?si=xJXqKHpJFyU_nP7T',
+    //     type: 'yt',
+    //   },
+    //   {
+    //     src: 'https://www.youtube.com/embed/Ni7mibOi0KE?si=8mYfLUZ9EnblEpEk',
+    //     type: 'yt',
+    //   },
+    //   {
+    //     src: 'https://www.youtube.com/embed/zGLlqqTsd44?si=d4jxGvI2WaNhKsE0',
+    //     type: 'yt',
+    //   },
+    //   {
+    //     src: 'https://www.youtube.com/embed/UBhdRrCP1h0?si=r6sJWfbO84qzAvYT',
+    //     type: 'yt',
+    //   },
+    //   {
+    //     src: 'https://www.youtube.com/embed/K1E1WbEMLQo?si=luJZIpEMBjB3UeHo',
+    //     type: 'yt',
+    //   },
 
-      {
-        src: 'https://www.youtube.com/embed/dzrMg1rGzrU?si=Cqz8o73drgPygxhe',
-        type: 'yt',
-      },
-      {
-        src: 'https://www.youtube.com/embed/_2BVfGPy8QU?si=PKqimhEI_XFEUEf0',
-        type: 'yt',
-      },
-    ],
+    //   {
+    //     src: 'https://www.youtube.com/embed/dzrMg1rGzrU?si=Cqz8o73drgPygxhe',
+    //     type: 'yt',
+    //   },
+    //   {
+    //     src: 'https://www.youtube.com/embed/_2BVfGPy8QU?si=PKqimhEI_XFEUEf0',
+    //     type: 'yt',
+    //   },
+    // ],
     weddings: [
       {
         src: 'https://www.youtube.com/embed/p9cwnNzpUbM?si=tvj4AlWzHJ31uhlj',
