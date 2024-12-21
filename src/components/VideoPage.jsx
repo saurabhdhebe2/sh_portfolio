@@ -1,6 +1,6 @@
 import VideoDetail from './VideoDetail';
 
-const VideoPage = ({ category }) => {
+const VideoPage = (props) => {
   const videos = {
     tv_shows: [
       {
@@ -293,29 +293,33 @@ const VideoPage = ({ category }) => {
     ],
   };
   return (
-    <div className="mx-auto lg:py-20">
-      {Object.entries(videos).map(([category, videoList]) => (
-        <div key={category} className="mb-8">
-          {/* Category Name */}
-          <h2 className="font-bebas-neue font-bold text-2xl sm:mt-20 sm:mb-20 md:mb-4 pl-6 capitalize">
+    <div className="mx-auto lg:pb-20">
+    {Object.entries(videos).map(([category, videoList]) => (
+      <div key={category} className="sm:mt-0 md:mt-16 mb-8">
+        {/* Category Name */}
+        <div className="sm:my-4 md:mb-6 pl-6">
+          <h2 className="font-bebas-neue font-bold text-2xl  capitalize">
             {category?.replace('_', ' ')}
           </h2>
-
-          {/* Videos Grid */}
-          <div className="grid sm:grid-cols-1 gap-1 mt-20 md:grid-cols-2 gap-2 lg:grid-cols-3 gap-4">
-            {videoList.map((video, index) => (
-              <div
-                key={index}
-                className={`${video.isVertical && video.type !== "yt" ? "my-36" : "mt-4"
-                  } ${video.type === "yt" ? "my-28" : "my-8"} lg:my-16`}
-              >
-                {video && <VideoDetail video={video} />}
-              </div>
-            ))}
-          </div>
         </div>
-      ))}
-    </div>
+        {/* Videos Grid */}
+        <div className="grid sm:mt-6 sm:grid-cols-1 gap-y-6 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {videoList.map((video, index) => (
+            <div
+              key={video?.src}
+              className={`${
+                video.isVertical && video.type !== "yt" ? "my-36" :  "sm:mt-8 md:mt-4"
+              } ${video.type === "yt" ? "mt-16 mb-12" : "my-8"} lg:my-16`}
+            >
+              {video && <VideoDetail video={video} />}
+            </div>
+          ))}
+        </div>
+      </div>
+    ))}
+  </div>
+  
+  
 
   );
 };
