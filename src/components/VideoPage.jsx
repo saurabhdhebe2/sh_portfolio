@@ -293,21 +293,30 @@ const VideoPage = ({ category }) => {
     ],
   };
   return (
-    <div
-      className={`grid sm:grid-col-1 gap-1 md:grid-col-2 gap-2 lg:grid-cols-3 gap-4 mx-auto lg:py-8`}
-    >
-      {videos[category].length &&
-        videos[category].map((video, index) => (
-          <div
-            className={`${
-              video.isVertical && video.type != 'yt' ? 'my-36' : 'mt-4'
-            } ${video.type == 'yt' ? 'my-28 mt-4' : 'my-8'}   lg:my-16`}
-            key={index}
-          >
-            {video && <VideoDetail video={video} />}
+    <div className="mx-auto lg:py-20">
+      {Object.entries(videos).map(([category, videoList]) => (
+        <div key={category} className="mb-8">
+          {/* Category Name */}
+          <h2 className="font-bebas-neue font-bold text-2xl sm:mt-20 sm:mb-20 md:mb-4 pl-6 capitalize">
+            {category?.replace('_', ' ')}
+          </h2>
+
+          {/* Videos Grid */}
+          <div className="grid sm:grid-cols-1 gap-1 mt-20 md:grid-cols-2 gap-2 lg:grid-cols-3 gap-4">
+            {videoList.map((video, index) => (
+              <div
+                key={index}
+                className={`${video.isVertical && video.type !== "yt" ? "my-36" : "mt-4"
+                  } ${video.type === "yt" ? "my-28" : "my-8"} lg:my-16`}
+              >
+                {video && <VideoDetail video={video} />}
+              </div>
+            ))}
           </div>
-        ))}
+        </div>
+      ))}
     </div>
+
   );
 };
 

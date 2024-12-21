@@ -62,7 +62,7 @@ const Navbar = () => {
         </div>
       </div>
       {/* Links on the right */}
-      <div className="hidden md:flex items-center tracking-widest space-x-8">
+      <div className="hidden font-bebas-neue md:flex items-center tracking-widest space-x-8">
         <Link href="/work">WORK</Link>
         <Link href="/contact">CONTACT</Link>
       </div>

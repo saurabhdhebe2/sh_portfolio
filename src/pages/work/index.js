@@ -16,7 +16,7 @@ const Work = () => {
   return (
     <RootLayout isNav={!isMobile}>
       <div className="min-h-screen sm:pt-34 md:pt-52 mx-4 mx-20 lg:py-8">
-        <div className="flex sm:pt-36 md:flex-row  items-center lg:items-center">
+        {/* <div className="flex sm:pt-36 md:flex-row  items-center lg:items-center">
           <Link
             href="/"
             className="text-white sm:mt-8 md:mt-8 font-semibold text-lg md:mr-0 lg:mt-0 "
@@ -37,7 +37,7 @@ const Work = () => {
           )}
         </div>
 
-        <h2 className="text-2xl md:text-4xl font-bold mb-4 mt-8 md:mt-20">
+        <h2 className="font-bebas-neue text-2xl md:text-4xl font-bold mb-4 mt-8 md:mt-20">
           Projects by Shubham dhebe
         </h2>
         <p className="text-sm md:text-base">
@@ -68,9 +68,9 @@ const Work = () => {
               {category.toUpperCase().replace('_', ' ')}
             </h2>
           ))}
-        </div>
+        </div> */}
 
-        <div className="mt-8">
+        <div className="pt-8">
           <VideoPage category={selectedCategory} />
         </div>
       </div>
