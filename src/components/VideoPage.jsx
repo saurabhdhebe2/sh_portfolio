@@ -111,7 +111,7 @@ const VideoPage = (props) => {
               key={video?.src}
               className={`${
                 video.isVertical && video.type !== "yt" ? "my-36" :  "sm:mt-8 md:mt-4"
-              } ${video.type === "yt" ? "mt-16 mb-12" : "my-8"} md:my-16`}
+              } ${video.type === "yt" ? "sm:mt-8 sm:mb-4 md:mt-16 md:mb-12" : "my-8"} md:my-16`}
             >
               {video && <VideoDetail video={video} />}
             </div>

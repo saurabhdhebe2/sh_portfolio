@@ -15,7 +15,7 @@ const Work = () => {
 
   return (
     <RootLayout isNav={!isMobile}>
-      <div className="min-h-screen sm:pt-34 md:pt-32 lg:pt-52 mx-4 mx-20 lg:py-8">
+      <div className="min-h-screen  md:pt-32 lg:pt-20 mx-4 mx-20 lg:py-8">
         {/* <div className="flex sm:pt-36 md:flex-row  items-center lg:items-center">
           <Link
             href="/"
