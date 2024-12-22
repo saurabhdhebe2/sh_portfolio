@@ -3,6 +3,7 @@ const VideoDetail = ({ video }) => {
     <div className="relative">
       <iframe
         id={`video-${video.id}`}
+        loading="lazy"
         className={`w-[90%] h-80 mx-auto my-[-50px] lg:bg-black`}
         src={video.src}
         title="Vimeo video player"
