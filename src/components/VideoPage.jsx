@@ -99,7 +99,7 @@ const VideoPage = (props) => {
     {Object.entries(videos).map(([category, videoList]) => (
       <div key={category} className="sm:mt-0 md:mt-16 mb-8">
         {/* Category Name */}
-        <div className="sm:my-4 md:mb-6 pl-6">
+        <div className="sm:my-4 md:mb-6 lg:mb-16 pl-6">
           <h2 className="font-bebas-neue font-bold text-2xl  capitalize">
             {category?.replace(/_/g, ' ')}
           </h2>
@@ -111,7 +111,7 @@ const VideoPage = (props) => {
               key={video?.src}
               className={`${
                 video.isVertical && video.type !== "yt" ? "my-36" :  "sm:mt-8 md:mt-4"
-              } ${video.type === "yt" ? "mt-16 mb-12" : "my-8"} lg:my-16`}
+              } ${video.type === "yt" ? "mt-16 mb-12" : "my-8"} md:my-16`}
             >
               {video && <VideoDetail video={video} />}
             </div>
