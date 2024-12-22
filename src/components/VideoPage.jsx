@@ -99,7 +99,7 @@ const VideoPage = (props) => {
     {Object.entries(videos).map(([category, videoList]) => (
       <div key={category} className="sm:mt-0 md:mt-16 mb-8">
         {/* Category Name */}
-        <div className="sm:my-4 md:mb-6 lg:mb-16 pl-6">
+        <div className="sm:my-8 md:mb-6 lg:mb-16 pl-6">
           <h2 className="font-bebas-neue font-bold text-2xl  capitalize">
             {category?.replace(/_/g, ' ')}
           </h2>
