@@ -105,7 +105,7 @@ const VideoPage = (props) => {
           </h2>
         </div>
         {/* Videos Grid */}
-        <div className="grid sm:mt-6 sm:grid-cols-1 gap-y-6 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid sm:mt-6 sm:grid-cols-1 gap-y-8 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {videoList.map((video, index) => (
             <div
               key={video?.src}
